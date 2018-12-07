@@ -1,0 +1,142 @@
+<!DOCTYPE HTML><html lang="zh-tw"><head><title>單網頁無障礙網頁檢測報告</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Content-Type" content="text/html" /><link rel="stylesheet" href="https://www.handicap-free.nat.gov.tw/Content/mystyle2.css?v=0001"></head>
+<body><div align="left">
+<table summary="版型表格：頁頭" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td class="embody"><div align="right"></div></td></tr>
+<tr><td valign="bottom"><a href="http://www.handicap-free.nat.gov.tw"  target="_blank"><img src="https://www.handicap-free.nat.gov.tw/uploads/freego_banner.png" alt="無障礙網路空間服務" width="750" height="50" border="0" /></a></td></tr>
+</tbody></table>
+<table summary="主要網頁內容表格" border="0" cellpadding="8" cellspacing="0" width="100%"><tbody>
+<tr align="left" bgcolor="#FFFFFF" valign="top"><td width="100%"><center><h1>單網頁無障礙網頁檢測報告</h1></center>
+	<ul>
+	<li><strong>受測網址</strong>：<a href="http://academia-sinica.s3-website-ap-southeast-1.amazonaws.com"  target="_blank" class="embody">http://academia-sinica.s3-website-ap-southeast-1.amazonaws.com</a></li>
+	<li><strong>檢測範圍</strong>：單網頁</li>
+	<li><strong>檢測時間</strong>：<span class="embody">Thu Jun 28 11:18:42 CST 2018</span></li>
+	<li><strong>完成時間</strong>：<span class="embody">Thu Jun 28 11:18:53 CST 2018</span></li>
+	<li><strong>檢測等級</strong>：AA等級</li>
+	<li><strong>受測網頁</strong>：此網站接受檢測共1個網頁，其中查得頁面逾時共0個</li>
+	<li><strong>檢測工具</strong>：FREEGO 2.0 Dec 06 2017 無障礙檢測工具</li>
+	</ul>
+	<hr size="1" /><p>受測網頁已經通過AA</strong>等級無障礙標準自動檢測部分，若此網頁同時通過下列人工檢測項目，則被認為符合AA等級無障礙網頁設計標準。關於無障礙網頁標章的下載與張貼，詳細規定請見<a target="_blank" href="https://www.handicap-free.nat.gov.tw/Ccessibility/Detail/5?Category=3">無障礙網頁標章使用規定</a>。</p><hr size="1" />
+	<h2>《人工檢測》</h2><br />以下這些項目仍影響此等級的無障礙程度，但必須經由人工檢測才能確定是否符合標準，請自行檢查相關內容：
+	<h3 class="garnet">A等級檢測項目</h3>
+	<ol>
+	<li style="color:green;"><span class="checkpoint">CS1010101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1187?Category=47" target="_blank"> 不可使用1像素見方的圖片、純色圖片、純透明的圖片</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1189?Category=48" target="_blank"> 圖片需要加上有意義、可代替圖片在文件脈絡中的功能及內容的替代文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1190?Category=48" target="_blank"> 僅在一組緊連圖片中的其中一個項目使用替代文字，描述該組圖片的所有項目</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010103</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1192?Category=48" target="_blank"> 圖片無法以替代文字清晰表達時，利用長描述提供更詳盡的說明網頁網址，利用整個說明網頁的篇幅來詳盡描述，最後並要能連結回原本的圖片</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010104</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1193?Category=48" target="_blank"> 提供字符圖案、表情符號、其他挪用文字外型作為表意功能之語言形式的替代文字，且其替代文字需有意義、可代替前述內容之目的與功能</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010105</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1194?Category=48" target="_blank"> 圖片以外的非文字內容需要有替代文字或長描述，並需具有與該內容或物件相同目的、呈現相同資訊，或者可提供概略描述、俗名、描述性名稱</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010106</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1196?Category=48" target="_blank"> 作為「送出」按鈕之用的圖片需提供替代文字，且此替代文字需能充分表達此按鈕之意義與功能</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010107</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1199?Category=48" target="_blank"> 提供可描述現場純音訊內容目的及現場純視訊內容目的的描述性標籤</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010500</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1205?Category=48" target="_blank"> 任何CAPTCHA驗證均需提供描述CAPTCHA驗證目的的替代文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010501</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1206?Category=48" target="_blank"> 網頁上任何一個CAPTCHA驗證均至少有另一個運用不同形式的CAPTCHA驗證，且具有相同的目的與功能</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010600</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1207?Category=48" target="_blank"> 對於輔助科技應當要忽略的圖片，使用空字串作為替代文字，並且不可使用標題屬性</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010601</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1208?Category=48" target="_blank"> 裝飾性圖片均透過CSS來置入</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010602</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1209?Category=48" target="_blank"> 使用CSS方塊模型來處理版面設計，不要用佔位圖片</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1210?Category=48" target="_blank"> 提供預先錄製之純音訊內容的時序媒體替代內容</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1211?Category=48" target="_blank"> 提供預先錄製之純視訊內容的時序媒體替代內容</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020102</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1212?Category=48" target="_blank"> 提供描述預先錄製之重要視訊內容的音訊，並描述其本身係用於描述重要視訊內容</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1213?Category=48" target="_blank"> 提供預先錄製之音訊內容的隱藏式或非隱藏式（永遠看得到的）字幕</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1214?Category=48" target="_blank"> 提供預先錄製之時序媒體的替代內容，並在時序媒體的非文字內容後馬上放置連往替代內容的鏈結</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020301</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1215?Category=48" target="_blank"> 除非同步媒體是文字內容的替代媒體，並且有明確地標示出來，否則就提供具有音訊描述或額外音訊描述的電影，或提供使用者可選取、且含有音訊描述的第二音軌</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1020302</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1365?Category=48" target="_blank"> 只有演講者頭部視訊提供靜態文字替代。</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1225?Category=48" target="_blank"> 使用文字來傳達那些由不同文字呈現所傳達的資訊</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1226?Category=48" target="_blank"> 使用色彩線索的時候就使用語意標記</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030102</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1227?Category=48" target="_blank"> 從呈現當中抽離資訊與結構，以便啟用不同的呈現</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030104</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1229?Category=48" target="_blank"> 適當使用巢狀標頭呈現文件結構</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030105</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1230?Category=48" target="_blank"> 使用語意組件來標記結構</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030106</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1231?Category=48" target="_blank"> 使用具語意的標記來標出強調的文字或特殊文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030107</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1232?Category=48" target="_blank"> 使用表格標記來呈現表格資訊</a></li>
+	<li style="color:green;"><span class="checkpoint">XH1030200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1160?Category=47" target="_blank"> 混用多國語言內容，出現已知文字走向不同的內容時，需有萬國碼的右至左標記（RLM）或左至右標記（LRM），或以行內組件搭配使用文字方向屬性</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1239?Category=48" target="_blank"> 將內容依據有意義的序列來排序</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030201</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1240?Category=48" target="_blank"> 使用萬國碼的右至左標記（RLM）或左至右標記（LRM）來即席混用文字走向，或在行內組件使用文字方向屬性以解決巢狀文字走向的問題</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030202</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1241?Category=48" target="_blank"> 使用CSS來控制字詞內的字母間距</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030203</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1242?Category=48" target="_blank"> DOM物件順序需與視覺順序一致</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1030300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1243?Category=48" target="_blank"> 針對若無文字項目識別則必須仰賴感官資訊才能理解的內容，提供文字項目識別</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1040100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1244?Category=48" target="_blank"> 確保所有藉由顏色所傳達出來的訊息，在沒有顏色後仍然能夠傳達出來</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1040101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1245?Category=48" target="_blank"> 當使用者介面元件取得焦點時，使用CSS變更其呈現方式</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1040102</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1368?Category=48" target="_blank"> 對有顏色表單控制標題，提供文字線索提示</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1040200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1246?Category=48" target="_blank"> 除非聲音在三秒鐘內會自動關閉，或者在靠近頁面開頭處有提供可以關閉自動播放的聲音的控制元件，否則只有當使用者請求時才播放聲音</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1050100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1272?Category=48" target="_blank"> 提供由鍵盤觸發的事件處理程式</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1050101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1369?Category=48" target="_blank"> 確認所有功能都能透過鍵盤介面來操作</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1050200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1273?Category=48" target="_blank"> 確認使用者不會困在內容中</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1275?Category=48" target="_blank"> 在多頁表單的第一頁提供一個核選框，讓使用者可以要求較寬鬆的階段時間限制，或者完全不要有階段時間限制</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1276?Category=48" target="_blank"> 提供能讓使用者將時間限制設為預設時間限制十倍，或完全關閉時間限制的方法</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060205</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1172?Category=47" target="_blank"> 動畫GIF圖檔之閃動時間不超過五秒鐘</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1277?Category=48" target="_blank"> 讓內容能加以暫停，並可從暫停處重新開始</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060201</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1278?Category=48" target="_blank"> 建立閃動少於5秒鐘的內容</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060202</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1279?Category=48" target="_blank"> 在網頁內使用可以停止移動、閃動、自動更新等內容的控制元件</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060203</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1280?Category=48" target="_blank"> 使用能由使用者代理關閉閃動內容的科技</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1060204</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1281?Category=48" target="_blank"> 提供鏈結、按鈕，或任何可以不閃動內容即重新載入頁面的機制</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1070100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1286?Category=48" target="_blank"> 使用工具來確認內容不會超出一般閃爍閾值或紅閃爍閾值，或者確認在任何一秒鐘的週期內，沒有任何內容元素會閃爍超過三次</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1070101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1287?Category=48" target="_blank"> 能讓閃爍區域保持夠小</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1289?Category=48" target="_blank"> 在每一個頁面頂端加入一個鏈結，直接連往主要的內容區域</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080101</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1290?Category=48" target="_blank"> 在重複內容的區塊開頭加入鏈結，連到該區塊結束之處，或用頁框來群聚重複出現的材料區塊</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080102</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1291?Category=48" target="_blank"> 在頁面頂端加入鏈結，連到每一個內容區域</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080103</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1292?Category=48" target="_blank"> 使用結構性組件來將鏈結分群</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080104</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1293?Category=48" target="_blank"> 在每一個內容區段開頭處提供標頭組件</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080105</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1294?Category=48" target="_blank"> 根據結構性標記來將內容定位</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1295?Category=48" target="_blank"> 提供網頁的描述性標題</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1297?Category=48" target="_blank"> 按照內容的序列及關連性來安排互動元件的放置順序</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1299?Category=48" target="_blank"> 使用鏈結文字及前後的脈絡情境來指明鏈結目的</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080401</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1300?Category=48" target="_blank"> 針對脈絡中的鏈結，提供描述鏈結目的的鏈結文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080402</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1301?Category=48" target="_blank"> 合併相同資源的毗鄰圖片與文字鏈結</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080403</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1303?Category=48" target="_blank"> 提供描述定位錨組件鏈結目的的鏈結文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080404</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1304?Category=48" target="_blank"> 針對脈絡中的鏈結，用標題屬性來補充鏈結文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080405</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1305?Category=48" target="_blank"> 在靠近網頁開頭處提供可以變更鏈結文字的控制元件，或使用CSS隱藏部分鏈結文字</a></li>
+	<li style="color:green;"><span class="checkpoint">XH1080500</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1179?Category=47" target="_blank"> 整個網站當中，必須要有至少一個網頁，使用清單組件或地圖組件或影像地圖來列出所有網站內網頁的鏈結清單；如前述網頁不存在，則整個網站內所有的網頁都要使用連結組件，提供完整的導覽功能，並提供搜尋功能。</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1080500</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1306?Category=48" target="_blank"> 提供網站地圖、導覽工具或機制、搜尋功能、網頁清單鏈結等功能，協助使用者尋找內容</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1090100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1319?Category=48" target="_blank"> 明確指出網頁文字所使用的人類語言</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1100100</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1329?Category=48" target="_blank"> 物件單純取得焦點時不要觸發脈絡變更，等使用者啟動該物件後才觸發脈絡變更</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1100200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1331?Category=48" target="_blank"> 在會產生脈絡變更的表單控制元件變更生效前，先描述會發生什麼事</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1100201</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1332?Category=48" target="_blank"> 使用按鈕來做出行動並啟動脈絡變更</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1100202</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1372?Category=48" target="_blank"> 供下載檔案格式不可為需依賴特定文書商用軟體即能開啟之檔案</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1110102</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1339?Category=48" target="_blank"> 資料成功送出後，提供成功的回饋</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1110200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1340?Category=48" target="_blank"> 在使用者送出資料前，先描述會發生什麼事</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1110201</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1341?Category=48" target="_blank"> 提供文字描述以指明需填寫的必填欄位</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1110202</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1342?Category=48" target="_blank"> 提供預期的資料格式與範例</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1110204</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1344?Category=48" target="_blank"> 使用毗鄰的按鈕來標示輸入區目的</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1120200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1360?Category=48" target="_blank"> 暴露名稱與角色，允許直接設定可由使用者設定的屬性，並在變更時提供通知</a></li>
+	<li style="color:green;"><span class="checkpoint">EV1010400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1204?Category=48" target="_blank"> 在所有情況中，均要求確認後才繼續所選的行動</a></li>
+	</ol>
+	<h3 class="garnet">AA等級檢測項目</h3>
+	<ol>
+	<li style="color:green;"><span class="checkpoint">EV2020400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1216?Category=48" target="_blank"> 只有演講者頭部視訊提供靜態文字替代。</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2020500</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1217?Category=48" target="_blank"> 為同步媒體中所有的視訊內容提供具有音訊描述或額外音訊描述的電影，或提供使用者可選取、且含有音訊描述的第二音軌</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1247?Category=48" target="_blank"> 確認文字（及影像文字）與文字後面的背景間，至少有4.5:1的對比值</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040301</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1249?Category=48" target="_blank"> 確認大尺寸文字（及影像文字）與文字後面的背景間，至少有3:1的對比值</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040302</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1248?Category=48" target="_blank"> 提供具對比值至少4.5:1，且可讓使用者將呈現切換成具有充分對比值（文字及影像文字至少4.5:1，大尺寸文字及影像文字至少3:1）的控制元件</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040303</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1250?Category=48" target="_blank"> 如果無法確認對比值充分（文字及影像文字至少4.5:1，大尺寸文字及影像文字至少3:1），則不要指定背景色彩，也不要指定前景色彩，而且不要使用會變更這些預設值的科技功能</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1251?Category=48" target="_blank"> 使用具有支援縮放功能且容易取得的使用者代理的科技，或者在頁面上提供可讓使用者變大所有文字尺寸到百分之兩百為止的控制元件</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040401</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1252?Category=48" target="_blank"> 使用流動版面設計，或者確認當文字尺寸變更而文字容器尺寸並未變更時，不會喪失任何內容或功能</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2040500</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1256?Category=48" target="_blank"> 使用CSS來將文字取代成影像文字，並提供使用者介面控制元件來加以切換</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2080600</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1307?Category=48" target="_blank"> 提供描述性的標頭</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2080601</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1308?Category=48" target="_blank"> 提供描述性的標籤</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2080700</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1309?Category=48" target="_blank"> 使用者介面取得焦點時，使其鍵盤焦點指示具高可見度</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2090200</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1320?Category=48" target="_blank"> 明確地指出網頁內容中人類語言的轉換</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2100300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1333?Category=48" target="_blank"> 每一次會重複出現的元件出現時，均按照相同的相對順序來呈現</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2100400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1334?Category=48" target="_blank"> 按照具有相同功能的內容，一致地使用標籤、名稱、替代文字</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2110300</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1347?Category=48" target="_blank"> 提供文字描述以指明未完成的必填欄位，並建立可以讓使用者跳到出錯之處的機制</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2110301</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1348?Category=48" target="_blank"> 使用者輸入的內容不在允許清單中，或格式未符合所需時，均提供文字描述，並提供建議的文字校正</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2110400</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1349?Category=48" target="_blank"> 在法律、財務、資料方面，均提供取回已刪除資訊的能力</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2110402</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1351?Category=48" target="_blank"> 在法律、財務、資料方面，均提供使用者在送出答覆前加以檢查及更正的能力</a></li>
+	<li style="color:green;"><span class="checkpoint">EV2110403</span> : <a href="http://www.handicap-free.nat.gov.tw/Download/Detail/1352?Category=48" target="_blank"> 在法律、財務、資料方面，均要求確認後才繼續所選的行動</a></li>
+	</ol>
+</td></tr>
+<tr><td>
+</td></tr>
+<tr><td>
+</td></tr>
+<tr><td>
+	<h2>《ME1100200 清單》</h2><br />
+</td></tr>
+<tr><td>
+	<h2>《檢測設定紀錄》</h2><br />
+Javascript狀態：停用<br /><h3 class="garnet">排除資料夾</h3><br />
+<h3 class="garnet">排除特定網頁</h3><br />
+<h3 class="garnet">排除檔案類型</h3><br />
+</td></tr>
+<tr valign="top"><td width="100%"><hr /><br /></td></tr>
+</tbody></table>
+<div title="版權宣告"><!-- #BeginLibraryItem "/Library/Untitled.lbi" --><span class="sbody">國家通訊傳播委員會 版權所有</span><span class="esbody">©2013 NCC. All Rights Reserved.</span><a class="slink"><br /><span class="sbody">10052臺北市中正區仁愛路1段50號；</span><span class="esbody">TEL:0800-177177</span><!-- #EndLibraryItem --></a></div>
+</div></body></html>
+

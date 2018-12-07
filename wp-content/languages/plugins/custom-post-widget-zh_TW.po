@@ -1,0 +1,224 @@
+# Translation of Plugins - Content Blocks (Custom Post Widget) - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - Content Blocks (Custom Post Widget) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-05-30 18:39:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - Content Blocks (Custom Post Widget) - Stable (latest release)\n"
+
+#: meta-box.php:16
+msgid "Shortcode to use if you prefer using the slug instead of the post ID:"
+msgstr "輸入內容區塊標題並發表後，這個短代碼中才會出現代稱的值；如果偏好以代稱取代文章 ID，請使用下方的短代碼:"
+
+#. Plugin Name of the plugin/theme
+msgid "Content Blocks (Custom Post Widget)"
+msgstr "Content Blocks (Custom Post Widget)"
+
+#: custom-post-widget.php:57
+msgid "Review"
+msgstr "為外掛評等"
+
+#: custom-post-widget.php:57
+msgid "Donate"
+msgstr "贊助外掛開發"
+
+#: meta-box.php:6
+msgid "Content Block Shortcodes"
+msgstr "內容區塊短代碼"
+
+#: meta-box.php:12
+msgid "You can place this content block into your posts, pages, custom post types or widgets using the shortcode below:"
+msgstr "使用下方的短代碼，便可將這個內容區塊插入文章、頁面、自訂文章類型或小工具中:"
+
+#: meta-box.php:14 meta-box.php:18 meta-box.php:22
+msgid "Copy to clipboard"
+msgstr "複製到剪貼簿"
+
+#: meta-box.php:20
+msgid "Use this shortcode to include the content block title:"
+msgstr "使用下方的短代碼，便會在呈現內容區塊時同時顯示區塊標題:"
+
+#: meta-box.php:30
+msgid "You can use this field to describe this content block:"
+msgstr "請在下方欄位填寫這個內容區塊的說明:"
+
+#: meta-box.php:5 meta-box.php:61
+msgid "Content Block Information"
+msgstr "內容區塊資訊"
+
+#: popup.php:17 popup.php:18
+msgid "Add Content Block"
+msgstr "新增內容區塊"
+
+#: popup.php:31
+msgid "Please select a Content Block"
+msgstr "請選取內容區塊"
+
+#: popup.php:40 popup.php:64
+msgid "Insert Content Block"
+msgstr "插入內容區塊"
+
+#: popup.php:43
+msgid "Select a Content Block below to add it to your post or page."
+msgstr "在下方選取內容區塊，便能將它加入文章或頁面中。"
+
+#: popup.php:48
+msgid "Select a Content Block"
+msgstr "選取內容區塊"
+
+#: popup.php:58 post-widget.php:41
+msgid "No content blocks available"
+msgstr "沒有可用的內容區塊"
+
+#: post-widget.php:11
+msgid "Displays custom post content in a widget"
+msgstr "在小工具中顯示自訂文章內容。"
+
+#: post-widget.php:12
+msgid "Content Block"
+msgstr "內容區塊"
+
+#: post-widget.php:26
+msgid "Content Block to Display:"
+msgstr "選取要顯示的內容區塊:"
+
+#: post-widget.php:52 post-widget.php:126
+msgid "Edit Content Block"
+msgstr "編輯內容區塊"
+
+#: post-widget.php:58
+msgid "Show post title"
+msgstr "顯示文章標題"
+
+#: post-widget.php:63
+msgid "Show featured image"
+msgstr "顯示精選圖片"
+
+#: post-widget.php:68
+msgid "Do not apply content filters"
+msgstr "不套用內容篩選條件"
+
+#: post-widget.php:84
+msgid "Find"
+msgstr "尋找"
+
+#: post-widget.php:121
+msgctxt "post type general name"
+msgid "Content Blocks"
+msgstr "內容區塊"
+
+#: post-widget.php:122
+msgctxt "post type singular name"
+msgid "Content Block"
+msgstr "內容區塊"
+
+#: post-widget.php:123
+msgctxt "post type plural name"
+msgid "Content Blocks"
+msgstr "內容區塊"
+
+#: post-widget.php:124
+msgctxt "block"
+msgid "Add Content Block"
+msgstr "新增內容區塊"
+
+#: post-widget.php:125
+msgid "Add New Content Block"
+msgstr "新增內容區塊"
+
+#: post-widget.php:127
+msgid "New Content Block"
+msgstr "新的內容區塊"
+
+#: post-widget.php:128
+msgid "View Content Block"
+msgstr "檢視內容區塊"
+
+#: post-widget.php:129
+msgid "Search Content Blocks"
+msgstr "搜尋內容區塊"
+
+#: post-widget.php:130
+msgid "No Content Blocks Found"
+msgstr "找不到內容區塊"
+
+#: post-widget.php:131
+msgid "No Content Blocks found in Trash"
+msgstr "在回收桶中找不到內容區塊"
+
+#: post-widget.php:154
+msgid "Content Block updated. <a href=\"%s\">Manage Widgets</a>"
+msgstr "內容區塊已更新。<a href=\"%s\">管理小工具</a>"
+
+#: post-widget.php:154 post-widget.php:157
+msgid "Content Block updated."
+msgstr "內容區塊已更新。"
+
+#: post-widget.php:155
+msgid "Custom field updated."
+msgstr "自訂欄位已更新。"
+
+#: post-widget.php:156
+msgid "Custom field deleted."
+msgstr "自訂欄位已刪除。"
+
+#: post-widget.php:158
+msgid "Content Block restored to revision from %s"
+msgstr "內容區塊已還原至 %s 的版本。"
+
+#: post-widget.php:159
+msgid "Content Block published. <a href=\"%s\">Manage Widgets</a>"
+msgstr "內容區塊已發表。<a href=\"%s\">管理小工具</a>"
+
+#: post-widget.php:159
+msgid "Content Block published."
+msgstr "內容區塊已發表。"
+
+#: post-widget.php:160
+msgid "Block saved."
+msgstr "內容區塊已儲存。"
+
+#: post-widget.php:161
+msgid "Content Block submitted. <a href=\"%s\">Manage Widgets</a>"
+msgstr "內容區塊已送交審查。<a href=\"%s\">管理小工具</a>"
+
+#: post-widget.php:161
+msgid "Content Block submitted."
+msgstr "內容區塊已送交審查。"
+
+#: post-widget.php:162
+msgid "Content Block scheduled for: <strong>%1$s</strong>."
+msgstr "內容區塊已排程於 <strong>%1$s</strong> 發表。"
+
+#: post-widget.php:162
+msgid "M j, Y @ G:i"
+msgstr "Y 年 n 月 j 日A g:i"
+
+#: post-widget.php:163
+msgid "Content Block draft updated. <a href=\"%s\">Manage Widgets</a>"
+msgstr "內容區塊草稿已更新。<a href=\"%s\">管理小工具</a>"
+
+#: post-widget.php:163
+msgid "Content Block draft updated."
+msgstr "內容區塊草稿已更新。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget"
+msgstr "https://vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget"
+
+#. Author of the plugin/theme
+msgid "Johan van der Wijk"
+msgstr "Johan van der Wijk"
+
+#. Author URI of the plugin/theme
+msgid "http://vanderwijk.nl"
+msgstr "https://vanderwijk.nl/"
+
+#. Description of the plugin/theme
+msgid "Show the content of a custom post of the type 'content_block' in a widget or with a shortcode."
+msgstr "在小工具中或以短代碼方式顯示 content_block 類型的自訂文章內容。繁體中文本地化由《<a href=\"https://www.alexclassroom.com/\" target=\"_blank\">阿力獅的教室</a>》站長<a href=\"https://www.facebook.com/captain.alexlion\" target=\"_blank\">阿力獅</a>提供。"

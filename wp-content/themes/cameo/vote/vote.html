@@ -1,0 +1,1089 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <script type='text/javascript' src='libs/jquery.min.js'></script>
+   <!--<script type='text/javascript' src='libs/bootstrap/js/bootstrap.min.js'></script>-->
+   <!--<link rel='stylesheet' type='text/css' href='libs/bootstrap/css/bootstrap.min.css' />-->
+   <script type="text/javascript" src="js/prototype.js"></script>
+   <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+   <script type="text/javascript" src="js/lightbox.js"></script>
+   <link rel="stylesheet" href="css/lightbox.min.css">
+<title>入選作品網路投票</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script language="javascript">
+//totop
+
+function backToTop() {
+    var x1 = x2 = x3 = 0;
+    var y1 = y2 = y3 = 0;
+
+    if (document.documentElement) {
+        x1 = document.documentElement.scrollLeft || 0;
+        y1 = document.documentElement.scrollTop || 0;
+    }
+
+    if (document.body) {
+        x2 = document.body.scrollLeft || 0;
+        y2 = document.body.scrollTop || 0;
+    }
+
+    x3 = window.scrollX || 0;
+    y3 = window.scrollY || 0;
+
+    var x = Math.max(x1, Math.max(x2, x3));
+    var y = Math.max(y1, Math.max(y2, y3));
+
+    window.scrollTo(Math.floor(x / 2), Math.floor(y / 2));
+
+    if (x > 0 || y > 0) {
+        window.setTimeout("backToTop()", 25);
+    }
+}
+
+
+
+  var DifferenceHour = -1
+  var DifferenceMinute = -1
+  var DifferenceSecond = -1
+  var Tday = new Date("Janu 1, 2011 23:59:59") 
+  var daysms = 24 * 60 * 60 * 1000
+  var hoursms = 60 * 60 * 1000
+  var Secondms = 60 * 1000
+  var microsecond = 1000
+
+function clock()
+{
+  var time = new Date()
+  var hour = time.getHours()
+  var minute = time.getMinutes()
+  var second = time.getSeconds()
+  var timevalue = ""+((hour > 12) ? hour-12:hour)
+  timevalue +=((minute < 10) ? ":0":":")+minute
+  timevalue +=((second < 10) ? ":0":":")+second
+  timevalue +=((hour >12 ) ? " PM":" AM")
+//  document.formnow.now.value = timevalue
+  var convertHour = DifferenceHour
+  var convertMinute = DifferenceMinute
+  var convertSecond = DifferenceSecond
+  var Diffms = Tday.getTime() - time.getTime()
+  DifferenceHour = Math.floor(Diffms / daysms)
+  Diffms -= DifferenceHour * daysms
+  DifferenceMinute = Math.floor(Diffms / hoursms)
+  Diffms -= DifferenceMinute * hoursms
+  DifferenceSecond = Math.floor(Diffms / Secondms)
+  Diffms -= DifferenceSecond * Secondms
+  var dSecs = Math.floor(Diffms / microsecond)
+  if(convertHour != DifferenceHour) document.formnow.dd.value=DifferenceHour
+  if(convertMinute != DifferenceMinute) document.formnow.hh.value=DifferenceMinute
+  if(convertSecond != DifferenceSecond) document.formnow.mm.value=DifferenceSecond
+  document.formnow.ss.value=dSecs
+//  document.formnow.Tnow.value= DifferenceHour  DifferenceMinute + DifferenceSecond + dSecs
+  setTimeout("clock()",1000)
+} 
+
+function check() {
+   var msg = "";
+   if(f.instName.value == '') alert("請填寫姓名");
+   else if(f.email.value == '') alert("請填寫E-Mail");
+   else if(f.phone.value == '') alert("請填寫連絡手機");
+   else if(f.star.value == '') alert("請投票標誌票選");
+   else if(f.slogan.value == '') alert("請投票標語票選");
+   else if(f.law.checked != true) alert("需請同意遵守活動辦法");
+   else if(f.email.value != '') {
+      var strEmail = f.email.value;
+      emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+      if(strEmail.search(emailRule)!= -1){
+         f.submit(); 
+      }
+      else{
+         alert("郵件格式錯誤");        
+      }
+   }
+   else f.submit();
+}
+
+</script>
+<script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+<!--
+	2) Optionally override the settings defined at the top
+	of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+<script type="text/javascript">
+	hs.graphicsDir = 'highslide/graphics/';
+	hs.align = 'center';
+	hs.transitions = ['expand', 'crossfade'];
+	hs.outlineType = 'rounded-white';
+	hs.fadeInOut = true;
+	hs.numberPosition = 'caption';
+	hs.dimmingOpacity = 0.75;
+
+	// Add the controlbar
+	if (hs.addSlideshow) hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+		overlayOptions: {
+			opacity: .75,
+			position: 'bottom center',
+			hideOnMouseOut: true
+		}
+	});
+</script>
+<link href="vot.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.vota {
+	color: #F00;
+	font-weight: bold;
+	font-family: "微軟正黑體";
+	font-size: 14px;
+}
+</style>
+<style>
+.abgne-menu input[type="radio"] {
+    display: none;
+}
+.abgne-menu input[type="radio"] + label {
+    display: inline-block;
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 15px 48px;
+    background-image:url("images/b.PNG");
+}
+.abgne-menu input[type="radio"]:checked + label {
+    background-color: #f00;
+    color: #fff;
+    background-image:url("images/a.PNG");
+}
+</style>
+<style type="text/css">
+            .button{
+                background: url(images/send.png) no-repeat;
+                cursor: pointer;
+                border: none;
+                width: 210px; 
+                height: 49px;
+            }
+
+.button:hover {	/* 當滑鼠移過時 */
+                background: url(images/send-ov.png) no-repeat;
+                cursor: pointer;
+                border: none;
+                width: 210px;
+                height: 49px;
+}
+</style>
+</head>
+
+<body bgcolor="#a5a099" topmargin="0" onload="MM_preloadImages('images/menu-01ov.jpg','images/menu-03ov.jpg','images/menu-04ov.jpg','images/send-ov.png','images/bt-vot-ov.jpg','images/bt-vot-select.jpg')">
+<form action="star.html" method="post" name="f">
+<input type=hidden name="instTime" value="2018-01-29 10:08:22">
+<table align="center" 
+ width="1280" border="0" cellspacing="0" cellpadding="0" >
+ 
+   <tr>
+    <td><img src="images/top01.jpg" width="1280" height="" alt="" /></td>
+  </tr>
+    <tr>
+    <td><table width="1280" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="198"><img src="images/menu-L.jpg" width="198" height="70" /></td>
+        <td width="109"><a href="description.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/menu-01ov.jpg',1)"><img src="images/menu-01.jpg" alt="活動辦法" name="Image5" width="109" height="70" border="0" id="Image5" /></a></td>
+        <td width="176"><img src="images/menu-02ov.jpg" alt="入選作品投票區" name="Image6" width="176" height="70" border="0" id="Image6" /></td>
+        <td width="142"><a href="announcement1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/menu-03ov.jpg',1)"><img src="images/menu-03.jpg" alt="票選結果公告" name="Image8" width="142" height="70" border="0" id="Image8" /></a></td>
+        <td width="170"><a href="announcement2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/menu-04ov.jpg',1)"><img src="images/menu-04.jpg" alt="票選抽獎名單公告" name="Image9" width="170" height="70" border="0" id="Image9" /></a></td>
+        <td width="485"><img src="images/menu-R.jpg" width="485" height="70" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/banner.jpg" width="1280" height="" alt="banner" /></td>
+  </tr>
+  
+  
+<tr >
+    <td height="437" valign="top"  background="images/datos-bg.jpg"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="top"><p><img src="images/logo-title-sinica.png" width="280" height="60" alt="logo acamedia sinica" /></p>
+              <h1>「90週年院慶標語與標誌設計徵選 」入選作品網路投票</h1></td>
+        </tr>
+          <tr>
+            <td valign="top">
+              <table width="1000" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="167" height="20"><p>　姓　　　　　名　:</p></td>
+                  <td height="25">
+                  <label for="textfield2"></label>
+                  <input name="instName" type="text" id="textfield2" size="50"  / >
+                  </td>
+                </tr>
+                <tr>
+                  <td height="20"><p>　電　子　郵　件　:</p></td>
+                  <td height="20">
+                  <label for="textfield2" ></label>
+                  <input name="email" type="text" id="textfield" size="50"  />
+                  </td>
+                </tr>
+                <tr>
+                  <td height="20"><p>　連　絡　電　話　:</p></td>
+                  <td height="20">
+                  <label for="textfield3"></label>
+                  <input name="phone" type="text" id="textfield3" size="50"  />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                  <input type="checkbox" name="law" value="1" style="WIDTH: 20px; HEIGHT: 20px">
+<span class="aviso">本人已詳細閱讀本票選活動辦法，並同意遵守相關規定及注意事項；同意提供個人聯絡資料（含姓名、聯絡電話及電子郵件），瞭解中央研究院將依「個人資料保護法」確保我的個人資料不外洩，並知道前述個資僅用於「90週年院慶標語與標誌設計徵選」網路票選活動使用。</span><br />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18071515-19"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-18071515-19');
+</script>                  </td>
+                </tr>
+            </table></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td background="images/bg.jpg"><table  bgcolor="#3d708a" width="1280" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left"><p><br>
+              <span style="color: #FFFFFF">1.每人每日可投票一次，當日已投過票者，需至隔日始能再投票一次。<br />
+              2.為系統驗證所需，投票時需輸入姓名、聯絡電話及電子郵件，且標誌及標語作品均需各投一票。<br />
+              3.資料輸入完成且選好作品後，請點選「確認送出」按鈕以完成投票程序。</span><br />
+            </p>
+              <h2><strong style="color: #FFFFFF">▌</strong><span style="color: #FFFFFF"> 標語徵選  入選作品</span></h2>
+<!--開發區域-->
+              <table width="1000" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="360"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/sT-1-2-a01.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF">
+                        <table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>探頤九十，窮理究實</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>我院自1928年於南京成立，在實證主義的影響之下，延續五四運動科......<a href="images/servicerule.jpg" rel="lightbox" title="<b>探頤九十，窮理究實</b><br>
+我院自1928年於南京成立，在實證主義的影響之下，延續五四運動科學方法之精神，探究天地事物之真理，而這樣的作法，與過去哲學研究唯實的觀點如出一轍，｢擁有對外在事物的知識，了解規範它們的定律，及它們之間的關係，是對人類行為之最可靠的指引｣，也因而構成我院90年來發展主要之軸心。在這樣的理念下，參酌《後漢書》「探頤窮理，六經典奧，舊章憲式，無所不覽」中，｢探頤窮理｣所隱含搜索隱秘事迹、探究深奥道理之意，先探頤，後窮理，正恰符合傅斯年｢上窮碧落下黃泉｣，方能進一步論述探究之觀點。此外，有鑒朱子即物窮理之理，在窮究當然之理的同時，窮究實然之理，並取｢九十｣與｢究實｣之諧音，故以此作為我院90年歷史之精神與象徵。">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                      <td width="23" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：338</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa1" name="slogan" value='1'><label for="aaa1"></label></div></td>
+                      </tr>
+                    </table></td>
+                  <td width="356"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/sT-1-2-a02.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><h3>中研90 歷九彌新</h3></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                        </tr>
+                        <tr>
+                          <td>
+                          <p>
+                          中央研究院從創立至今，邁入第九十個年頭；經歷一個半甲子的歲月，......<a href="images/servicerule.jpg" rel="lightbox" title="<b>中研90 歷九彌新</b><br>
+中央研究院從創立至今，邁入第九十個年頭；經歷一個半甲子的歲月，依然保持初心，致力提升台灣整體及永續發展而殫心竭力，其精神可謂「歷久彌新」。此處，以「九」與「久」同音，一字雙關，不但顯示其精神、亦表示其將進入第九十個寒暑。<br>
+不僅如此，研究對象，即「存在」本身，也同樣是亙古恆新；而其亦有賴於研究者以不同以往的觀點去剖析、觀察、詮釋。9為極數、包羅萬象，再來便歸0；而此便暗示著各種可能性與創新的發生。<br>">《詳全文》</a>
+                          </p>
+                          </td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：260</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="aaa2" name="slogan" value='2'><label for="aaa2"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td width="320"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/sT-1-2-a03.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><h3>求真求善，創新創見，<br>走過九十，邁向一百</h3></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                        </tr>
+                        <tr>
+                          <td>
+                          <p>
+                          求真求善，創新創見--如字面之解釋，用[求善]是想強調中研院的......<a href="images/servicerule.jpg" rel="lightbox" title="<b>求真求善，創新創見，走過九十，邁向一百</b><br>
+求真求善，創新創見--如字面之解釋，用[求善]是想強調中研院的研究不僅有求真，更有[求善]的必要，做為表率，能造福社會。用[創見]是想強調中研院的研究不只有創新，更要有[創見]，應與眾不同，要有獨到的見解。走過九十，邁向一百--如字面之解釋。">《詳全文》</a>
+                          </p>
+                          </td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：264</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="aaa3" name="slogan" value='3'><label for="aaa3"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+				
+				
+                <tr>
+                  <td>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a04.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>中研傳承九十載，<br>創意無限展未來</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>九十年來，院內蘊育出許多優質的人才，而這些人才正是國家不斷創新......<a href="images/servicerule.jpg" rel="lightbox" title="<b>中研傳承九十載，創意無限展未來</b><br>
+九十年來，院內蘊育出許多優質的人才，而這些人才正是國家不斷創新進步的資產，藉由這些人才無限創新的想法，並透過經驗的累積與傳承，繼續開創嶄新的未來。">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：1370</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa4" name="slogan" value='4'><label for="aaa4"></label></div></td>
+                      </tr>
+                    </table></td>
+                  <td>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a05.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>中研90載，研究更精彩。</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>中研院為我國最高的研究機構，歷年來不斷創新，不論在物理、化學、......<a href="images/servicerule.jpg" rel="lightbox" title="<b>中研90載，研究更精彩。</b><br>
+中研院為我國最高的研究機構，歷年來不斷創新，不論在物理、化學、生命科學或者是社會人文、歷史研究…，中研院的研究人員在各個領域上都引領著研究的潮流，並且持續帶領著社會更加進步。<br>
+期許中研院在九十週年的生日之際，能夠承先啟後，在未來迸發出更璀璨的光彩。
+">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：454</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa5" name="slogan" value='5'><label for="aaa5"></label></div></td>
+                      </tr>
+                    </table></td>
+                  <td width="320">
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a06.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>You reap what you sow</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>環境可以營造不同的人，像中研院這麼良好的環境，大家只要進去探訪......<a href="images/servicerule.jpg" rel="lightbox" title="<b>You reap what you sow</b><br>
+環境可以營造不同的人，像中研院這麼良好的環境，大家只要進去探訪，一定能受益良多。">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：671</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa6" name="slogan" value='6'><label for="aaa6"></label></div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a07.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>中研九十，創新務實</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>中研院九十歲院慶，不停追求卓越創新，腳步依然穩健踏實，承先啟後......<a href="images/servicerule.jpg" rel="lightbox" title="<b>中研九十，創新務實</b><br>
+中研院九十歲院慶，不停追求卓越創新，腳步依然穩健踏實，承先啟後，為人類謀求最大福祉。<br>
+標語設計：<br>
+一、標語意涵力求完整，有期許：「卓越創新」，有做法：「穩健踏實」。<br>
+二、標語僅用八字，簡潔有力，句尾同音，琅琅上口，印象深刻。
+">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：1168</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa7" name="slogan" value='7'><label for="aaa7"></label></div></td>
+                      </tr>
+                    </table></td>
+                  <td>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a08.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>中研九十，求真究實</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>中研院九十院慶，致力於追求真理，實事求是，卓越創新。標語設計：......<a href="images/servicerule.jpg" rel="lightbox" title="<b>中研九十，求真究實</b><br>
+中研院九十院慶，致力於追求真理，實事求是，卓越創新。<br>
+標語設計：<br>
+一、帶出中研院九十院慶，戮力追求真理，穩健踏實的研究態度。<br>
+二、以「究實」諧音「九十」，產生文字趣味，強化推廣印象。<br>
+三、標語短短八字，道出中研院所致力追求的目標與態度，簡潔了當。
+">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：741</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa8" name="slogan" value='8'><label for="aaa8"></label></div></td>
+                      </tr>
+                    </table></td>
+                  <td width="320">
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a09.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>卓越中研，歷九磐十</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>卓越的央研究院，歷經九十個年頭屹立不搖，取自成語” 堅如磐石” ......<a href="images/servicerule.jpg" rel="lightbox" title="<b>卓越中研，歷九磐十</b><br>
+卓越的中央研究院，歷經九十個年頭屹立不搖，取自成語” 堅如磐石” 比喻不可動搖的概念，以諧音”歷九(久)磐十(石)” 表達”中研九十”歡慶歷史久遠，無法動搖的學術成就，繼續以卓越創新迎接下個年頭!">《詳全文》</a></p></td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：531</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa9" name="slogan" value='9'><label for="aaa9"></label></div></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                        <td width="267"><img src="images/sT-1-2-a10.jpg" width="267" height="80" /></td>
+                        <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                      </tr>
+                      <tr>
+                        <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><h3>卓越九十，創新未來！</h3></td>
+                          </tr>
+                          <tr>
+                            <td><img src="images/sT-2-2line.jpg" width="267" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td><p>九十年來，中研院在學術領域不斷創造優秀的成果及偉大的貢獻。在未......<a href="images/servicerule.jpg" rel="lightbox" title="<b>卓越九十，創新未來！</b><br>
+九十年來，中研院在學術領域不斷創造優秀的成果及偉大的貢獻。在未來，中研院仍將秉持著優質的學術傳統與高度的求知精神，追尋、探索這日新月異的世界，並締造更傑出、豐碩的成就。">《詳全文》</a></p>
+                            </td>
+                          </tr>
+                        </table></td>
+                        <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                        <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                        <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                      </tr>
+                    </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：259</p></td>
+                        <td width="167" align="right"><div class="abgne-menu"><input type="radio" id="aaa10" name="slogan" value='10'><label for="aaa10"></label></div></td>
+                      </tr>
+                    </table>
+<p>&nbsp;</p></td>
+                  <td>&nbsp;</td>
+                  <td width="320">&nbsp;</td>
+                </tr>
+              </table>
+             
+              
+              <h2><strong style="color: #FFFFFF">▌</strong><span style="color: #FFFFFF"> 標誌徵選  入選作品</span></h2>
+              <p></p>
+              <table width="1000" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="360"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a01.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/0u.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/0u.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          將90週年數字與數學中無限大的符號結合，象徵中研院在各項研究領域......<a href="images/servicerule.jpg" rel="lightbox" title="將90週年數字與數學中無限大的符號結合，象徵中研院在各項研究領域中無極限的研究精神與面對各項困難的毅力，在未來研究發展上能夠更沒有框架限制的盡情發揮。符號中的螺旋線條，代表圓融、柔軟、巧妙的應變態度。紅色代表面對種種挑戰抱持不變的熱情與初衷莫忘。<br>期許在未來能有更突破的研究成果分享。">《詳全文》</a> 
+                          </p></td>
+                        </tr>
+                        </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：646</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb1" name="star" value='1'><label for="bbb1"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td width="356"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a02.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/0v.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/0v.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          以「90」為主題，用綠色代表和平，設計出葉子的感覺，可以轉換不同......<a href="images/servicerule.jpg" rel="lightbox" title="以「90」為主題，用綠色代表和平，設計出葉子的感覺，可以轉換不同屬於春夏秋冬的顏色，來表達舊的不去，新的不來，一個「時間輪替」的概念。英文字Sinica的「i」為火柴棒的設計，則代表希望。">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：219</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb2" name="star" value='2'><label for="bbb2"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td width="320"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a03.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/10.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/10.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          以90周年為主題，轉折部分代表的都是新的開始，深藍色代表著原先的......<a href="images/servicerule.jpg" rel="lightbox" title="以90周年為主題，轉折部分代表的都是新的開始，深藍色代表著原先的理論與亮橘色的創新，相輔相成，讓研究能夠更加成功，並且也持續不論的研究，讓學者們能夠在自己的領域上獲得更多的資源。">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：360</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb3" name="star" value='3'><label for="bbb3"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a04.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/12.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/12.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          此設計，主要是表達中央研究院的90周年院慶活動及此單位對於學術......<a href="images/servicerule.jpg" rel="lightbox" title="此設計，主要是表達中央研究院的90周年院慶活動及此單位對於學術研究的貢獻和精神。中央研究院為我國最重要最高的學術研究機關，我認為要成為此單位的標誌必須要表達出中央研究院的精神。而作為學術研究最高單位，對於任何問題背後的解答與理解是很重要的，“任何現象事物都有其背後原理道理”應該會在此單位的任何地方被強調和注重。作品中，藉由黃金比例的幾何圖形和尺規作圖繪製出由”公式”產生的線條，讓線條背後的原理跟理由同時也被解讀<br>
+/實線為尺規作圖可產生的線條及邏輯<br>
+/虛線為公式或幾何圖形的關係<br>
+/紅線則為最後作品疊圖形成的最終成果<br>
+且其構圖合成一個”中”的字，同時也點出中央研究院的院慶圖標的獨特性與整合性。<br>
+">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：259</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb4" name="star" value='4'><label for="bbb4"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a05.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/11.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/11.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          象徵中央研究院90年來不斷累積的研究紀錄，運用紙張的意象，構成......<a href="images/servicerule.jpg" rel="lightbox" title="象徵中央研究院90年來不斷累積的研究紀錄，運用紙張的意象，構成「90」，logo設計同時帶入「go」的形象，象徵中央研究院在專業的領域持續往前。">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：188</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb5" name="star" value='5'><label for="bbb5"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td width="320"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a06.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/13.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/13.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          整體視覺由90結合英文go的概念，造型簡潔俐落，呈現出90周年院慶與......<a href="images/servicerule.jpg" rel="lightbox" title="整體視覺由90結合英文go的概念，造型簡潔俐落，呈現出90周年院慶與go的意涵，再以綻放光芒呈現出數字0的意象，創造出高貴優雅般的形象，傳達中央研究院成立九十年以來，一步一腳印，穩健踏實地邁向成功之道，九十週年院慶精采絕倫，綻放光彩，迎向希望的未來，傳達「成究九十、精彩踏實」之理念。色彩應用以金色為主，咖啡色為輔，呈現出高貴的氣息、卓越的質感。LOGO構成的元素可拆解靈活運用在各種製作物上，變化萬千，打造出高貴優雅般的整體視覺饗宴。">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：1580</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb6" name="star" value='6'><label for="bbb6"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a07.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/14.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/14.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          中研院研究的領域主要可分為數理科學組、生命科學組、人文與社會......<a href="images/servicerule.jpg" rel="lightbox" title="中研院研究的領域主要可分為數理科學組、生命科學組、人文與社會科學組三大類別，因此在圖符部分使用了：1.分子鏈、實驗瓶和試管，代表物理化學。2.實驗瓶向上冒出的氣體，象徵天氣變化，代表地球科學。3.DNA螺旋，象徵生命科學。4.書本，象徵人文的意涵。
+5.稻穗、鳥則代表了生態，而稻穗也有教育之象徵意涵。
+6.下方的彩帶，以及彩帶上的90年紀念字樣，代表慶祝的意涵。7.圓符組合起來拼成的圓形樣貌形似地球，象徵中研院一路走來的歷史軌跡，也象徵全球化；更象徵著因為中研院的貢獻，世界因中研院而變得更美好。搭配慶祝的彩帶，有紀念過去、往未來邁進的繼往開來之意涵。8.配色部分，使用古銅色，有精緻、紀念，以及不失莊重的意涵。
+">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：1588</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb7" name="star" value='7'><label for="bbb7"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a08.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/15.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/15.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          只有不斷研究及創新，才能讓未來有無限可能，所以將90週年結合無限......<a href="images/servicerule.jpg" rel="lightbox" title="只有不斷研究及創新，才能讓未來有無限可能，所以將90週年結合無限的符號，中研院這過去90年不斷研究各種科學，才能讓台灣的未來創造無限可能。">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：238</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb8" name="star" value='8'><label for="bbb8"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td width="320"><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a09.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/16.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/16.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          將院徽、地球與轉動的90融合，象徵中研不斷「轉動、創新、突破」持......<a href="images/servicerule.jpg" rel="lightbox" title="將院徽、地球與轉動的90融合，象徵中研不斷「轉動、創新、突破」持續加強對當社會、人文與世界的關懷，藉
+以豐富人類的文明，創造更美好的世界，以此為90週年之邁向新世紀的印記。
+">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：394</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb9" name="star" value='9'><label for="bbb9"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td><table width="320" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="29"><img src="images/sT-1-1.jpg" width="29" height="80" /></td>
+                      <td width="267"><img src="images/mT-1-2-a10.jpg" width="267" height="80" /></td>
+                      <td width="24"><img src="images/sT-1-3.jpg" width="24" height="80" /></td>
+                    </tr>
+                    <tr>
+                      <td width="29" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="267" bgcolor="#FFFFFF"><table width="267" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="110">
+                          <span id='PHOTO_LIST'><a id='thumb1' href='images/17.jpg' class='highslide' onclick='return hs.expand(this)' onkeypress=''><img src='images/17.jpg' width=160 height=160></a></span>
+                          </td>
+                          <td width="16">&nbsp;</td>
+                          <td width="141"><p>說明：<br />
+                          院徵─代表中研院。90─代表中研院90週年院慶。∞─代表無限大、學無......<a href="images/servicerule.jpg" rel="lightbox" title="院徵─代表中研院。<br>
+90─代表中研院90週年院慶。<br>
+∞─代表無限大、學無止境。<br>
+循環─代表生生不息、傳承永續。<br>
+圖案以90字型結合中研院院徽，表現中研院90週年院慶標誌主視覺。<br>
+標誌凸顯中研院致力於生命科學、數理科學、人文及社會科學三方均衡發展，為國家學術研究奠基，培育青年學術人才，歷經90年承啟創新，優異研究成果引領台灣站上世界學術舞台。
+">《詳全文》</a>
+                          </p></td>
+                        </tr>
+                      </table></td>
+                      <td width="24" bgcolor="#FFFFFF">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="29"><img src="images/sT-3-1.jpg" width="29" height="29" /></td>
+                      <td width="267" bgcolor="#FFFFFF">&nbsp;</td>
+                      <td width="24"><img src="images/sT-3-3.jpg" width="24" height="29" /></td>
+                    </tr>
+                  </table>
+                    <table width="320" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="153"><p style="color: #FFFFFF">已得票數：592</p></td>
+                        <td width="167" align="right">
+                        <div class="abgne-menu"><input type="radio" id="bbb10" name="star" value='10'><label for="bbb10"></label></div>
+                        </td>
+                      </tr>
+                    </table></td>
+                  <td>&nbsp;</td>
+                  <td width="320">&nbsp;</td>
+                </tr>
+              </table>
+              <table width="1000" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+
+<!--開發區域結束--> 
+
+<a href="#">投票已經結束</a>
+
+
+
+                  </td>
+                </tr>
+          </table>
+              <p></p>
+              </td>
+          </tr>
+        </table>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/footer.jpg" width="1280" height="23" alt="footer" /></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
