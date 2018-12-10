@@ -1,0 +1,1 @@
+ÆOwp-content/plugins/sitepress-multilingual-cms/lib/select2/select2-overrides.css 2cssXhrOwp-content/plugins/sitepress-multilingual-cms/lib/select2/select2-overrides.css

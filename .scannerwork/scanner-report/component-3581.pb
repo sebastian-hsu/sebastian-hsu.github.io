@@ -1,0 +1,1 @@
+ıgalleries/past-events6 :ürgalleries/past-events6

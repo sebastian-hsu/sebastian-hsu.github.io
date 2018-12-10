@@ -1,0 +1,1 @@
+Ú,wp-content/themes/photography/css/screen.css 2cssXÐWhr,wp-content/themes/photography/css/screen.css

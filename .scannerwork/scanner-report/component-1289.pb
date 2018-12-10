@@ -1,0 +1,2 @@
+‰
+]wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/tooltip/tooltip.js 2jsXRhr]wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/tooltip/tooltip.js

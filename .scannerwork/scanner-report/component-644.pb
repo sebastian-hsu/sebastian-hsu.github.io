@@ -1,0 +1,1 @@
+„Fwp-content/plugins/sitepress-multilingual-cms/res/js/affiliate-info.js 2jsXhrFwp-content/plugins/sitepress-multilingual-cms/res/js/affiliate-info.js

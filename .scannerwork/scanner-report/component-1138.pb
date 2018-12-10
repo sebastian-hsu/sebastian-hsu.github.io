@@ -1,0 +1,1 @@
+ò_wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/original-term.html 2webXhr_wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/original-term.html

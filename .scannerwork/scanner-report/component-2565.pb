@@ -1,0 +1,1 @@
+…Iwp-content/themes/photography/modules/kirki/assets/vendor/fontawesome/css :„rIwp-content/themes/photography/modules/kirki/assets/vendor/fontawesome/css

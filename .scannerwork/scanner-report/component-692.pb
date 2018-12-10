@@ -1,0 +1,1 @@
+´Kwp-content/plugins/sitepress-multilingual-cms/res/js/post-list-quickedit.js 2jsX<hrKwp-content/plugins/sitepress-multilingual-cms/res/js/post-list-quickedit.js

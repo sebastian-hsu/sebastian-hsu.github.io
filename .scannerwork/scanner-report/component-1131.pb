@@ -1,0 +1,1 @@
+ë]wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/label-popup.html 2webX(hr]wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/label-popup.html

@@ -1,0 +1,1 @@
+¢cwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/label-popup-view.js 2jsX”hrcwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/label-popup-view.js

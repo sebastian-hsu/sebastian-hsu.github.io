@@ -1,0 +1,1 @@
+‰Swp-content/themes/photography/modules/kirki/docs/_includes/testimonials-script.html 2webXGhrSwp-content/themes/photography/modules/kirki/docs/_includes/testimonials-script.html

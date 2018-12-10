@@ -1,0 +1,1 @@
+†*wp-content/themes/photography/css/mac-skin :’r*wp-content/themes/photography/css/mac-skin

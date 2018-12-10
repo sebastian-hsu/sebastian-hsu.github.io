@@ -1,0 +1,1 @@
+Œ@wp-content/plugins/wp-timelines/css/font-awesome/scss/_core.scss 2cssXhr@wp-content/plugins/wp-timelines/css/font-awesome/scss/_core.scss

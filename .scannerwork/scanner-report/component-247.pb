@@ -1,0 +1,1 @@
+÷-wp-content/plugins/add-to-any/wpml-config.xml 2xmlXhr-wp-content/plugins/add-to-any/wpml-config.xml

@@ -1,0 +1,2 @@
+†
+ewp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/save-components-setting.js 2jsXhrewp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/save-components-setting.js

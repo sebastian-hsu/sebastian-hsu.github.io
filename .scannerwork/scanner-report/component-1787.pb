@@ -1,0 +1,1 @@
+û9wp-content/plugins/simply-static_bak/js/admin-generate.js 2jsXhr9wp-content/plugins/simply-static_bak/js/admin-generate.js

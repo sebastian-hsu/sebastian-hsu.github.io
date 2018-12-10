@@ -1,0 +1,1 @@
+»Bwp-content/themes/photography/modules/kirki/docs/_sass/syntax.scss 2cssXˆhrBwp-content/themes/photography/modules/kirki/docs/_sass/syntax.scss

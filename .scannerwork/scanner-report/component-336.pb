@@ -1,0 +1,1 @@
+ÐMwp-content/plugins/multiple-post-thumbnails/js/multi-post-thumbnails-admin.js 2jsX3hrMwp-content/plugins/multiple-post-thumbnails/js/multi-post-thumbnails-admin.js

@@ -1,0 +1,1 @@
+Ù,wp-content/themes/photography/js/jarallax.js 2jsX·hr,wp-content/themes/photography/js/jarallax.js

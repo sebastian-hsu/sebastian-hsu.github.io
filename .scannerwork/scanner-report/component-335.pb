@@ -1,0 +1,1 @@
+Ï.wp-content/plugins/multiple-post-thumbnails/js :ÎÐr.wp-content/plugins/multiple-post-thumbnails/js

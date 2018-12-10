@@ -1,0 +1,1 @@
+îbwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/individual-label.html 2webXhrbwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/individual-label.html

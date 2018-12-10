@@ -1,0 +1,1 @@
+¼Swp-content/plugins/sitepress-multilingual-cms/res/js/language-switchers-settings.js 2jsXùhrSwp-content/plugins/sitepress-multilingual-cms/res/js/language-switchers-settings.js

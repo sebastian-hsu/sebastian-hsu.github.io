@@ -1,0 +1,1 @@
+ô(wp-content/plugins/simply-static_bak/css :ór(wp-content/plugins/simply-static_bak/css

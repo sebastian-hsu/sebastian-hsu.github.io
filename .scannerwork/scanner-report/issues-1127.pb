@@ -1,0 +1,3 @@
+K
+WebImgWithoutAltCheck%Add an "alt" attribute to this image. 2 ÃK
+WebImgWithoutAltCheck%Add an "alt" attribute to this image. 2 ½

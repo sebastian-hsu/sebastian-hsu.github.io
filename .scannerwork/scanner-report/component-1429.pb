@@ -1,0 +1,1 @@
+•Swp-content/plugins/sitepress-multilingual-cms/vendor/otgs/icons/icons-overview.html 2webXÈhrSwp-content/plugins/sitepress-multilingual-cms/vendor/otgs/icons/icons-overview.html

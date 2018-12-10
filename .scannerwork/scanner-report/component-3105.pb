@@ -1,0 +1,1 @@
+¡Fwp-content/themes/photography/modules/kirki/controls/scss/palette.scss 2cssX7hrFwp-content/themes/photography/modules/kirki/controls/scss/palette.scss

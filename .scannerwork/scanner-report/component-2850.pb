@@ -1,0 +1,1 @@
+¢Ywp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/ibm-type.scss 2cssX9hrYwp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/ibm-type.scss

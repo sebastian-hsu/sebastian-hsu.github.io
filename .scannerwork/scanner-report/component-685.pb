@@ -1,0 +1,1 @@
+­bwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/collections/term-rows.js 2jsXhrbwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/collections/term-rows.js

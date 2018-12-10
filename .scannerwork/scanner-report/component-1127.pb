@@ -1,0 +1,1 @@
+ç\wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-popup.html 2webX/hr\wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-popup.html

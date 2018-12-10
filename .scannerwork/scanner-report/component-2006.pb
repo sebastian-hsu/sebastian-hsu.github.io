@@ -1,0 +1,1 @@
+Ö.wp-content/themes/photography/css/tg_frame.css 2cssXvhr.wp-content/themes/photography/css/tg_frame.css

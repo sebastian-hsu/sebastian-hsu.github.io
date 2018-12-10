@@ -1,0 +1,1 @@
+ó3wp-content/themes/photography/functions/colorpicker :òr3wp-content/themes/photography/functions/colorpicker

@@ -1,0 +1,1 @@
+£bwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-popup-view.js 2jsXœhrbwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-popup-view.js

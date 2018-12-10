@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>活動辦法</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="vot.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#a5a099" topmargin="0" onload="MM_preloadImages('images/menu-02ov.jpg','images/menu-03ov.jpg','images/menu-04ov.jpg')">
+<table align="center" 
+ width="1280" border="0" cellspacing="0" cellpadding="0" >
+ 
+   <tr>
+    <td><img src="images/top01.jpg" width="1280" height="" alt="" /></td>
+  </tr>
+    <tr>
+    <td><table width="1280" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="198"><img src="images/menu-L.jpg" width="198" height="70" /></td>
+        <td width="184"><img src="images/menu-01ov.jpg" alt="活動辦法" name="Image5" width="109" height="70" border="0" id="Image5" /></td>
+        <td width="237"><a href="vote.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/menu-02ov.jpg',1)"><img src="images/menu-02.jpg" alt="入選作品投票區" name="Image6" width="176" height="70" border="0" id="Image6" /></a></td>
+        <td width="161"><a href="announcement1.html" onmouseover="MM_swapImage('Image8','','images/menu-03ov.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/menu-03.jpg" alt="票選結果公告" name="Image8" width="142" height="70" border="0" id="Image8" /></a></td>
+        <td width="185"><a href="announcement2.html"  onmouseover="MM_swapImage('Image9','','images/menu-04ov.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/menu-04.jpg" alt="票選抽獎名單公告" name="Image9" width="170" height="70" border="0" id="Image9" /></a></td>
+        <td><img src="images/menu-R.jpg" width="485" height="70" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/banner.jpg" width="1280" height="" alt="banner" /></td>
+  </tr>
+  <tr>
+    <td background="images/bg.jpg"><table  background="images/mainbg.jpg"width="1280" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><p><img src="images/logo-title-sinica.png" width="280" height="60" alt="logo acamedia sinica" /></p>
+              <h1>
+              「90週年院慶標語與標誌設計徵選 」網路票選活動              </h1></td>
+          </tr>
+          <tr>
+            <td>
+            <p>&nbsp;</p>
+              <p><strong>一、活動說明：</strong><br />
+                1. 中央研究院「90週年院慶標語與標誌設計徵選活動」徵件日前自9月底開跑，於11月30日截止，經評審委員審查初選後，入圍網路票選之名單已公布，標誌及標語各入圍10件作品。<br />
+2. 歡迎投出您神聖的一票，選出心目中最符合中央研究院90週年院慶意象的作品，票選前5名之作品將進入最終階段評選，有機會成為本次設計徵選活動優勝作品！其中票選第1名作品將獲得「網路人氣獎」獎項。<br />
+3. 參與投票者將有機會抽中精美紀念禮品一份！<br />
+              </p>
+              <p><strong>二、活動期間：</strong><br />
+                網路投票自即日起至107年1月16日中午12:00止。<br />
+                最終票選結果及網路抽獎名單將於107年1月公布於「票選結果公告」及「票選抽獎名單公告」頁面。</p>
+              <p><strong>三、票選方式</strong>：<br />
+                1. 每人每日可投票一次，當日已投過票者，需至隔日始能再投票一次。<br />
+                2. 為系統驗證所需，投票時需輸入<strong>姓名、聯絡手機及電子郵件</strong>，且標誌及標語作品均需各投一票。<br />
+                3. 資料輸入完成且選好作品後，請點選「確認送出」按鈕以完成投票程序。<br />
+              </p>
+              <p><strong>四、抽獎名額：</strong><br />
+                票選活動結束之後，將會從參與投票名單中，以電腦亂數方式，抽出10名贈送精美禮品一份，獲獎名單將於本活動網站公告。</p>
+              <p>五、設計徵選活動簡章下載：<br />
+                <a href="http://sec.sinica.edu.tw/anniversary90.pdf" target="_new"> http://sec.sinica.edu.tw/anniversary90.pdf</a> （Pdf格式）<br />
+                <a href="http://sec.sinica.edu.tw/anniversary90.docx" target="_new"> http://sec.sinica.edu.tw/anniversary90.docx</a> （Word格式）</p>
+              <p><strong>六、備註：</strong><br />
+                本活動因故無法進行時，本院保有隨時修正、暫停或終止活動之權利。另本院保留修改活動辦法之權利，同時有權對本活動之一切事宜，包含抽獎資格、本活動辦法及活動注意事項作出解釋或裁決。<br />
+              </p>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18071515-19"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-18071515-19');
+</script>            </td>
+          </tr>
+        </table>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/footer.jpg" width="1280" height="23" alt="footer" /></td>
+  </tr>
+</table>
+</body>
+</html>

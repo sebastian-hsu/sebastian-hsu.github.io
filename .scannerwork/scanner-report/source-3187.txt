@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: 'Didot-HTF-L96-Light';
+  src: url('Didot-HTF-L96-Light.eot?#iefix') format('embedded-opentype'),  url('Didot-HTF-L96-Light.woff') format('woff'), url('Didot-HTF-L96-Light.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

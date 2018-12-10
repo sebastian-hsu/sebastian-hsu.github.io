@@ -1,0 +1,1 @@
+ô5wp-content/plugins/sitepress-multilingual-cms/res/xsd :ór5wp-content/plugins/sitepress-multilingual-cms/res/xsd

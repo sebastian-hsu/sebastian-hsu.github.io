@@ -1,0 +1,1 @@
+Œ	jwp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js 2jsXGhrjwp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js

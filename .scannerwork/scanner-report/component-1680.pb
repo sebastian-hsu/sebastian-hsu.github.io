@@ -1,0 +1,1 @@
+ê1wp-content/plugins/adminimize/js/remove_footer.js 2jsXhr1wp-content/plugins/adminimize/js/remove_footer.js

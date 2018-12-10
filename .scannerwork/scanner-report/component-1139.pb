@@ -1,0 +1,1 @@
+óhwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-original-disabled.html 2webXhrhwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-original-disabled.html

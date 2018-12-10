@@ -1,0 +1,1 @@
+‡#wp-content/plugins/simply-static/js :†ˆr#wp-content/plugins/simply-static/js

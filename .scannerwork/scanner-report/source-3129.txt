@@ -1,0 +1,17 @@
+.mobx-close {
+  background-position: 12px -80.8px!important;
+}
+
+
+
+.mobx-play {
+  background-position: 12px -211.8px!important;
+}
+
+.mobx-autoplay .mobx-play {
+  background-position: 12px -256px!important;
+}
+
+.mobx-fullscreen {
+  background-position: 12px -389px!important;
+}

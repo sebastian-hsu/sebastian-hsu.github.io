@@ -1,0 +1,1 @@
+þ!galleries/past-events2/index.html 2webX±	hr!galleries/past-events2/index.html

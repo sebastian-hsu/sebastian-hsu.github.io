@@ -1,0 +1,1 @@
+öQwp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/serif :õrQwp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/serif

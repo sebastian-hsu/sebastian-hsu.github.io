@@ -1,0 +1,1 @@
+Ü2wp-content/plugins/photography-custom-post/gallery :ÛÝÞßr2wp-content/plugins/photography-custom-post/gallery

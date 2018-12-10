@@ -1,0 +1,1 @@
+ç9wp-content/themes/photography/js/jquery.magnific-popup.js 2jsXåhr9wp-content/themes/photography/js/jquery.magnific-popup.js

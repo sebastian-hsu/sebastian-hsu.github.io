@@ -1,0 +1,1 @@
+Þ@wp-content/plugins/photography-custom-post/gallery/tg-gallery.js 2jsXhr@wp-content/plugins/photography-custom-post/gallery/tg-gallery.js

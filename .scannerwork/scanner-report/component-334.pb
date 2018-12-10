@@ -1,0 +1,1 @@
+Î=wp-content/plugins/multiple-post-thumbnails/js/media-modal.js 2jsX@hr=wp-content/plugins/multiple-post-thumbnails/js/media-modal.js

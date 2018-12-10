@@ -1,0 +1,1 @@
+¥awp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-rows-view.js 2jsXrhrawp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-rows-view.js

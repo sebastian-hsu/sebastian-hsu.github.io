@@ -1,0 +1,1 @@
+Î#wp-content/themes/photography/cache :âãr#wp-content/themes/photography/cache

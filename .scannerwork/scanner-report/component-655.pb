@@ -1,0 +1,1 @@
+è<wp-content/plugins/sitepress-multilingual-cms/res/js/tooltip :ér<wp-content/plugins/sitepress-multilingual-cms/res/js/tooltip

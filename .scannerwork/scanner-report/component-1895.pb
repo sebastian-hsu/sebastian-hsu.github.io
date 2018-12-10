@@ -1,0 +1,1 @@
+ç*wp-content/themes/photography/css/jqueryui :ær*wp-content/themes/photography/css/jqueryui

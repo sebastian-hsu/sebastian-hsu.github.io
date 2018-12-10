@@ -1,0 +1,1 @@
+ÿVwp-content/themes/photography/modules/kirki/assets/vendor/selectWoo/js/select2.full.js 2jsXš3hrVwp-content/themes/photography/modules/kirki/assets/vendor/selectWoo/js/select2.full.js

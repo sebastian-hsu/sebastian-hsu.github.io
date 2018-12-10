@@ -1,0 +1,1 @@
+Âdwp-content/plugins/sitepress-multilingual-cms/res/js/translation-feedback/wpml-tf-frontend-script.js 2jsX’hrdwp-content/plugins/sitepress-multilingual-cms/res/js/translation-feedback/wpml-tf-frontend-script.js

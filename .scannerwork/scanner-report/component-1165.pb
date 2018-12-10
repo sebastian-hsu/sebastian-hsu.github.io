@@ -1,0 +1,1 @@
+ç	`wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click :å	r`wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click

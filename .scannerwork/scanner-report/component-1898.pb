@@ -1,0 +1,1 @@
+ê-wp-content/themes/photography/css/smooth-skin :ïr-wp-content/themes/photography/css/smooth-skin

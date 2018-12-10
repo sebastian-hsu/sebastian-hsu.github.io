@@ -1,0 +1,1 @@
+Èiwp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/sans/light/italic/_index.scss 2cssXhriwp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/sans/light/italic/_index.scss

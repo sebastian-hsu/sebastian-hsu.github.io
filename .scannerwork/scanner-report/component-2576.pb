@@ -1,0 +1,1 @@
+êhwp-content/themes/photography/modules/kirki/assets/vendor/wp-color-picker-alpha/wp-color-picker-alpha.js 2jsX⁄hrhwp-content/themes/photography/modules/kirki/assets/vendor/wp-color-picker-alpha/wp-color-picker-alpha.js

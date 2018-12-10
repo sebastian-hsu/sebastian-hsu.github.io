@@ -1,0 +1,1 @@
+galleries/past-events7 :€rgalleries/past-events7

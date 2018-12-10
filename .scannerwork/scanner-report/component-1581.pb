@@ -1,0 +1,1 @@
+­=wp-content/plugins/admin-menu-editor/css/force-dashicons.scss 2cssXhr=wp-content/plugins/admin-menu-editor/css/force-dashicons.scss

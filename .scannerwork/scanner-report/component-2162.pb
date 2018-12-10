@@ -1,0 +1,1 @@
+ò>wp-content/themes/photography/functions/colorpicker/index.html 2webX¹hr>wp-content/themes/photography/functions/colorpicker/index.html

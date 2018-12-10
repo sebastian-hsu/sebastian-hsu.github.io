@@ -1,0 +1,1 @@
+£2wp-content/themes/photography/js/jarallax-video.js 2jsXŸhr2wp-content/themes/photography/js/jarallax-video.js

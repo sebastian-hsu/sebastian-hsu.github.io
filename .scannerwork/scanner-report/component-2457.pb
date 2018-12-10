@@ -1,0 +1,1 @@
+™/wp-content/themes/photography/js/hw-parallax.js 2jsXíhr/wp-content/themes/photography/js/hw-parallax.js

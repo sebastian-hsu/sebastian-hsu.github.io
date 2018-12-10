@@ -1,0 +1,1 @@
+ªPwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/models :©«¬rPwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/models

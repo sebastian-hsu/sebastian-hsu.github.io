@@ -1,0 +1,1 @@
+Ÿkwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/original-term-popup-view.js 2jsXhrkwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/original-term-popup-view.js

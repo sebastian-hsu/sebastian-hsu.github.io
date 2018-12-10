@@ -1,0 +1,1 @@
+¢/wp-content/themes/cameo/vote/announcement2.html 2webXvhr/wp-content/themes/cameo/vote/announcement2.html

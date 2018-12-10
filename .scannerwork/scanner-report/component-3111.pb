@@ -1,0 +1,1 @@
+§Fwp-content/themes/photography/modules/kirki/controls/scss/generic.scss 2cssXhrFwp-content/themes/photography/modules/kirki/controls/scss/generic.scss

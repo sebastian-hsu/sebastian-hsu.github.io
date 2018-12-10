@@ -1,0 +1,1 @@
+†5wp-content/plugins/simply-static/js/admin-generate.js 2jsXhr5wp-content/plugins/simply-static/js/admin-generate.js

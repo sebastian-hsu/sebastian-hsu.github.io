@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<meta http-equiv="refresh" content="0;url=/cross-regiion/">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "/cross-regiion/";
+		</script>
+
+		<p>You are being redirected to <a href="/cross-regiion/">/cross-regiion/</a></p>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+•=wp-content/plugins/sitepress-multilingual-cms/res/js/settings :”r=wp-content/plugins/sitepress-multilingual-cms/res/js/settings

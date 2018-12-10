@@ -1,0 +1,1 @@
+ÿ$wp-content/plugins/simply-static/css :þr$wp-content/plugins/simply-static/css

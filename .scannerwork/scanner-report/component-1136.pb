@@ -1,0 +1,1 @@
+ðewp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/status-trans-select.html 2webXhrewp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/status-trans-select.html

@@ -1,0 +1,1 @@
+è`wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/copy-all-popup.html 2webXhr`wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/copy-all-popup.html

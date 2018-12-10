@@ -1,0 +1,2 @@
+Œ
+ewp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/installer_theme_install.js 2jsXahrewp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/res/js/installer_theme_install.js

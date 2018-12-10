@@ -1,0 +1,1 @@
+†?wp-content/plugins/sitepress-multilingual-cms/res/js/widgets.js 2jsX!hr?wp-content/plugins/sitepress-multilingual-cms/res/js/widgets.js

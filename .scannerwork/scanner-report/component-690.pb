@@ -1,0 +1,1 @@
+²;wp-content/plugins/sitepress-multilingual-cms/res/js/shared :±r;wp-content/plugins/sitepress-multilingual-cms/res/js/shared

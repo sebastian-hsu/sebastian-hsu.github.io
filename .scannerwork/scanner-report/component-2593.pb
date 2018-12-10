@@ -1,0 +1,1 @@
+¡Pwp-content/themes/photography/modules/kirki/modules/collapsible/collapsible.scss 2cssXhrPwp-content/themes/photography/modules/kirki/modules/collapsible/collapsible.scss

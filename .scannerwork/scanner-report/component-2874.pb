@@ -1,0 +1,2 @@
+º`wp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/sans/semibold/italic :
+¹»¼½¾r`wp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/sans/semibold/italic

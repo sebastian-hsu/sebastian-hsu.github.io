@@ -1,0 +1,1 @@
+‚>wp-content/plugins/sitepress-multilingual-cms/res/js/languages :r>wp-content/plugins/sitepress-multilingual-cms/res/js/languages

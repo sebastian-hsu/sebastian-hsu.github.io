@@ -1,0 +1,1 @@
+Ÿ1wp-content/themes/photography/css/hw-parallax.css 2cssX$hr1wp-content/themes/photography/css/hw-parallax.css

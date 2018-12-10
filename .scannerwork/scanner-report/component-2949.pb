@@ -1,0 +1,1 @@
+…Fwp-content/themes/photography/modules/kirki/docs/_includes/footer.html 2webX)hrFwp-content/themes/photography/modules/kirki/docs/_includes/footer.html

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<meta http-equiv="refresh" content="0;url=/en/activities-highlights/">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "/en/activities-highlights/";
+		</script>
+
+		<p>You are being redirected to <a href="/en/activities-highlights/">/en/activities-highlights/</a></p>
+	</body>
+</html>

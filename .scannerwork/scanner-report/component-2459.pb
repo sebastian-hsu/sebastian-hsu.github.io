@@ -1,0 +1,1 @@
+›,wp-content/themes/photography/js/kenburns.js 2jsXèhr,wp-content/themes/photography/js/kenburns.js

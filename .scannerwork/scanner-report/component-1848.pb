@@ -1,0 +1,1 @@
+¸-wp-content/themes/photography/css/parade-skin :¹r-wp-content/themes/photography/css/parade-skin

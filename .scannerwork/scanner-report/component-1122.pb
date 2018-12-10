@@ -1,0 +1,1 @@
+â`wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/original-label.html 2webXhr`wp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/original-label.html

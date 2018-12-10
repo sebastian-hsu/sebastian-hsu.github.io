@@ -1,0 +1,1 @@
+üEwp-content/themes/photography/modules/kirki/controls/js/src/slider.js 2jsX'hrEwp-content/themes/photography/modules/kirki/controls/js/src/slider.js

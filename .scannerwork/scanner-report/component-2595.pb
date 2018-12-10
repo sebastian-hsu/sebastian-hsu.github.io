@@ -1,0 +1,1 @@
+£Nwp-content/themes/photography/modules/kirki/modules/collapsible/collapsible.js 2jsX6hrNwp-content/themes/photography/modules/kirki/modules/collapsible/collapsible.js

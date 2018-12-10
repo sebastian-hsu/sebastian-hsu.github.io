@@ -1,0 +1,2 @@
+æawp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-not-synced.html 2webX
+hrawp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/term-not-synced.html

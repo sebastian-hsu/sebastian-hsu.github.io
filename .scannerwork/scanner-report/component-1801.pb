@@ -1,0 +1,1 @@
+‰2wp-content/plugins/image-sizes/assets/js/script.js 2jsXhr2wp-content/plugins/image-sizes/assets/js/script.js

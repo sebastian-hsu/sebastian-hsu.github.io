@@ -1,0 +1,1 @@
+ù[wp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/_functions.scss 2cssX(hr[wp-content/themes/photography/modules/kirki/docs/assets/fonts/ibm-type/scss/_functions.scss

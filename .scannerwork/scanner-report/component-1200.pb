@@ -1,0 +1,1 @@
+°	=wp-content/plugins/sitepress-multilingual-cms/wpml-config.xml 2xmlXChr=wp-content/plugins/sitepress-multilingual-cms/wpml-config.xml

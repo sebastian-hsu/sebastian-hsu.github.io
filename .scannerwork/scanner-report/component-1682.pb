@@ -1,0 +1,1 @@
+’.wp-content/plugins/adminimize/js/adminimize.js 2jsXhr.wp-content/plugins/adminimize/js/adminimize.js

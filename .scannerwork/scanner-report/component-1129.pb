@@ -1,0 +1,1 @@
+éawp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/ref_sync_select.html 2webXhrawp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/ref_sync_select.html

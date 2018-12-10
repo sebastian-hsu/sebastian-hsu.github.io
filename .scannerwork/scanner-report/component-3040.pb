@@ -1,0 +1,1 @@
+à=wp-content/themes/photography/modules/kirki/phpcs.ruleset.xml 2xmlXhr=wp-content/themes/photography/modules/kirki/phpcs.ruleset.xml

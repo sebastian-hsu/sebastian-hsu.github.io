@@ -1,0 +1,1 @@
+ˆ+wp-content/plugins/adminimize/css/style.css 2cssX<hr+wp-content/plugins/adminimize/css/style.css

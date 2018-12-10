@@ -1,0 +1,1 @@
+ödwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/taxonomy-main-wrap.html 2webX"hrdwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/taxonomy-main-wrap.html

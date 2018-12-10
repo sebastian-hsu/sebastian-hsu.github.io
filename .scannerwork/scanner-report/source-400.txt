@@ -1,0 +1,527 @@
+@charset "utf-8";
+/*-- CSS style --*/
+.wpex.horizontal-timeline {
+    font-size: 0.8125em;
+}
+.wpex.horizontal-timeline .hor-container{position:relative;}
+.wpex.horizontal-timeline:not(.no-arr-top) .hor-container{ padding:0 2.1875em;}
+.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-list{ min-height:6.25em;}
+.wpex.horizontal-timeline .timeline-hr{
+	border-bottom: 0.1875em solid #EEEEEE;
+    top: 3.0625em;
+    position: absolute;
+    width: calc(100% - 4.375em);
+	content: "";
+	height:0;
+}
+.wpex.horizontal-timeline.no-arr-top .timeline-hr{ width:100%;}
+.wpex.horizontal-timeline .timeline-hr:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 0.1875em;
+    width: 1.25em;
+    background-image: -webkit-linear-gradient( left , #EEEEEE, rgba(255, 255, 255, .8));
+    background-image: linear-gradient(to right, #EEEEEE, rgba(255, 255, 255, .8));
+}
+.wpex.horizontal-timeline .timeline-pos-select {
+    border-bottom: 0.1875em solid #00BCD4;
+    top: 3.0625em;
+    position: absolute;
+	width:calc(50% - 2.1875em);
+}
+.wpex.horizontal-timeline.no-arr-top .timeline-pos-select{ width:0;}
+.wpex.horizontal-timeline.no-arr-top.tlhl-full .timeline-pos-select{ width:100%;}
+.wpex.horizontal-timeline .timeline-pos-select:before {
+    content: "";
+    height: 0.1875em;
+    width: 1.25em;
+    position: absolute;
+    left: 0;
+    background-image: -webkit-linear-gradient( left , #fff, rgba(238, 238, 238, 0));
+    background-image: linear-gradient(to right, #fff, rgba(238, 238, 238, 0));
+}
+
+.wpex.horizontal-timeline .horizontal-nav li{ position:relative; list-style: none; display: inline-block; padding:0;}
+.wpex.horizontal-timeline .horizontal-nav li a{
+	line-height: 2.375em;
+    padding-bottom: 0;
+    text-decoration: none;
+    box-shadow: none;
+    color: #7d7d7d;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: visible;
+    display: block;
+	text-align:center;
+}
+.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav li.ex_s_lick-current a{
+	font-size: 0.9375em;
+    font-weight: bold;
+}
+.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current + li.prev_item a:before,
+.wpex.horizontal-timeline .horizontal-nav li a i,
+.wpex.horizontal-timeline .horizontal-nav li a:before{
+	font: normal normal normal 0.875em/1 FontAwesome;
+    content: "";
+    height: 1.0625em;
+    width: 1.0625em;
+    border: 0.1875em solid #EEEEEE;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.3125em;
+    left: 50%;
+    margin-left: -0.375em;
+    transition: all .25s;
+    box-sizing: border-box;
+}
+.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current a:before{
+	font-size: 1.0625em;
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+}
+.wpex.horizontal-timeline .ex_s_lick-prev:before, .wpex.horizontal-timeline .ex_s_lick-next:before{ display:none;}
+.wpex.horizontal-timeline .ex_s_lick-prev, .wpex.horizontal-timeline .ex_s_lick-next{
+	line-height: 1.8125em;
+    border-radius: 1.25em;
+    background: rgba(255, 255, 255, 1);
+    border: 0.1875em solid #00BCD4;
+    color: #00BCD4;
+    font-size: 1.1875em;
+    height: 2.1875em;
+    width: 2.1875em;
+	z-index:3;
+}
+.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-prev{ left:-2.1875em}
+.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-next{ right:-2.1875em;}
+.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav .ex_s_lick-arrow.ex_s_lick-disabled{ border-color: #EEEEEE; color: #EEEEEE; background:transparent;}
+.wpex.horizontal-timeline .horizontal-nav li.prev_item a:before { border-color: #00BCD4;}
+.wpex.horizontal-timeline .wpex-timeline-label{ text-align:center;}
+.wpex.horizontal-timeline .wpex-timeline-label .timeline-media{ margin-bottom:1.875em;}
+.wpex.horizontal-timeline .wpex-timeline-label .timeline-media img {
+    max-height: 18.75em;
+    width: auto;
+    margin: 0 auto;
+}
+.wpex.horizontal-timeline .wpex-timeline-label h2{margin-top:0em; margin-bottom: 0.9375em; font-weight: normal; text-transform: uppercase;}
+.wpex.horizontal-timeline .wpex-timeline-label h2 a{
+    text-decoration: none;
+    box-shadow: none;
+    color: #101010;
+}
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-next,
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-prev{
+	font-size: 1.625em;
+    box-shadow: none;
+    text-decoration: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 0;
+    text-align: center;
+    line-height: 2.4375em;
+    border-radius: 0;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    z-index: 9999;
+    transition: all .3s;
+}
+.wpex.horizontal-timeline .ex_s_lick-prev:hover, .wpex.horizontal-timeline .ex_s_lick-next:hover,
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-next:hover,
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-prev:hover{
+	color: #FFFFFF;
+    border-color: #00BCD4;
+    background-color: #00BCD4;
+	transition:all .2s;
+}
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-prev{ left: 1.25em;
+	opacity: 0;
+	transition: all .3s ease;
+    transform: translateX(-2.5em);
+    -webkit-transform: translateX(-2.5em);
+}
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-next{ right: 1.25em;
+	opacity: 0;
+    transform: translateX(2.5em);
+    -webkit-transform: translateX(2.5em);
+    transition: all .3s ease;
+}
+.wpex.horizontal-timeline .horizontal-content:hover .ex_s_lick-prev,
+.wpex.horizontal-timeline .horizontal-content:hover .ex_s_lick-next{
+	transform: translateX(0);
+    -webkit-transform: translateX(0);
+    opacity: 1;
+}
+.wpex.horizontal-timeline .wptl-readmore a{ border-radius:1.25em;}
+.wpex.horizontal-timeline .horizontal-nav li a i{ display:none;
+	width:2.5em;
+	height:2.5em;
+	font-size:1.1875em;
+	line-height:2.1875em;
+	bottom:-2.6875em;
+	margin-left:-1.25em;
+}
+.wpex.horizontal-timeline.tl-hozsteps .horizontal-nav li a:before{ display:none;}
+.wpex.horizontal-timeline.tl-hozsteps .horizontal-nav li a i{ display: block;}
+.wpex.horizontal-timeline.tl-hozsteps .ex_s_lick-arrow{ border-radius:0}
+.wpex.horizontal-timeline.tl-hozsteps .horizontal-nav li.prev_item a i{border-color: #00BCD4; color:#00BCD4}
+.wpex.horizontal-timeline.tl-hozsteps .horizontal-nav li.ex_s_lick-current a i{
+	background: #00BCD4;
+	border-color: #00BCD4;
+    color: #fff;
+}
+.wpex.horizontal-timeline.tl-hozsteps .timeline-hr,
+.wpex.horizontal-timeline.tl-hozsteps .timeline-pos-select{ top:3.75em; border-color: #00BCD4;}
+.wpex.horizontal-timeline.tl-hozsteps .horizontal-nav .ex_s_lick-list {
+    min-height: 7.5em;
+}
+.wpex.horizontal-timeline.tl-hozsteps .timeline-hr:before{background-image: -webkit-linear-gradient( right , #fff, rgba(238, 238, 238, 0)); background-image: linear-gradient(to left, #fff, rgba(238, 238, 238, 0));}
+.wpex.horizontal-timeline .ex_s_lick-slide:focus{ outline:none}
+.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    padding-left: 0.0625em;
+    padding-right: 0.9375em;
+}
+.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding-left: 0.9375em;
+}
+.wpex.horizontal-timeline .wpex-timeline-label .wptl-more-meta i {
+    margin-right: 0.5em;
+}
+.wpex.horizontal-timeline.show-all-items .timeline-pos-select {
+    width: calc(100% - 4.375em);
+}
+.wpex.horizontal-timeline.no-arr-top.show-all-items .timeline-pos-select{ width:100%}
+.wpex.horizontal-timeline.show-all-items .timeline-pos-select:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 0.1875em;
+    width: 1.25em;
+	background-image: -webkit-linear-gradient( right , #fff, rgba(238, 238, 238, 0));
+    background-image: linear-gradient(to left, #fff, rgba(238, 238, 238, 0));
+}
+.wpex.horizontal-timeline:not(.tl-hozsteps) .horizontal-content+.hor-container ul.horizontal-nav li.ex_s_lick-slide {
+    margin-top: 3.8125em;
+}
+.wpex.horizontal-timeline .horizontal-content + .hor-container ul.horizontal-nav li.ex_s_lick-slide a:before{ top:-1.25em; bottom: auto;}
+.wpex.horizontal-timeline.wpex-horizontal-left .horizontal-content + .hor-container{ margin-top:-1.875em;}
+.wpex.horizontal-timeline.show-all-items.dark-style .timeline-pos-select:after {
+	background-image: -webkit-linear-gradient( right , #484848, rgba(238, 238, 238, 0));
+    background-image: linear-gradient(to left, #484848, rgba(238, 238, 238, 0));
+
+}
+/* Multi*/
+
+.wpex.horizontal-timeline.ex-multi-item:not(.wpex-horizontal-3) .wptl-embed > :first-child {
+	margin-bottom: 0;
+}
+.wpex.horizontal-timeline.ex-multi-item .hor-container .ex_s_lick-list {
+    padding-top: 8.125em;
+}
+.wpex.horizontal-timeline.ex-multi-item .timeline-hr {
+    top: 4.9375em;
+}
+.wpex.horizontal-timeline.ex-multi-item:not(.wpex-horizontal-4) .horizontal-nav li a.wpex_point {
+    margin: 0 0.4375em;
+    margin-top: -8.0625em;
+    position: relative;
+    text-align: left;
+    font-size: 1.25em;
+    background: #00BCD4;
+    color: #FFFFFF;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li a.wpex_point i{position: relative; border-radius:0;
+	display:inline-block;
+    left: auto;
+    right: auto;
+    text-align: center;
+    top: 0;
+    margin: 0; line-height:2.8125em;
+    margin-right: 0.3125em; width: 3.125em;
+    height: 3.125em;
+	color: #00BCD4;
+	border-color: #00BCD4;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li a.wpex_point i.no-icon {
+    width: 0.0625em;
+    visibility: hidden;
+}
+.wpex.horizontal-timeline.ex-multi-item:not(.wpex-horizontal-4) .horizontal-nav li a.wpex_point:after{
+	border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #00BCD4;
+    border-width: 0.625em;
+    left: 1.8125em;
+    bottom:-1.125em;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav{ margin:0 -0.625em; list-style:none}
+.wpextt_templates{ margin-top:3.75em; padding:0.3125em 0.4375em;}
+.wpextt_templates > div {background:#fff;background-size: cover; background-position: center center;}
+.wpex.horizontal-timeline.ex-multi-item .timeline-pos-select{ width:100%;}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li  .wptl-readmore{ display:inline-block; float:none;}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav  .wpextt_templates .timeline-details a{
+	line-height: 1.6; white-space: normal; text-align:left; position:relative;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav .wpextt_templates .wptl-readmore a{
+	border: 0;
+	padding: 0 0 0 1.5625em; font-weight:100; text-transform:capitalize;
+    background: transparent;
+    color: #101010;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav .wptl-readmore a:after{
+	content: '';
+    position: absolute;
+    background: #7a7272;
+    width: 1.125em;
+    height: 0.0625em;
+    left: 0;
+    top: 45%;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li .info-cat{ white-space:normal;}
+.wpex.horizontal-timeline.ex-multi-item .wptl-more-meta{ margin-top:-0.3125em;}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li .info-cat a{ display:inline-block; overflow:visible;}
+.wpex.horizontal-timeline.ex-multi-item .wptl-excerpt{ margin:0 0 0.9375em 0; padding:0; border:0; float:none;}
+.wpex.horizontal-timeline.ex-multi-item .wpex-timeline-label .timeline-media{ margin:0;}
+.wpex.horizontal-timeline.ex-multi-item .wpex-timeline-label .timeline-details{
+	padding: 1.5625em 1.25em;
+    text-align: left;
+	border:0.125em solid #eee;
+}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li  .wpextt_templates a:before{ display:none;}
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li a:before,
+.wpex.horizontal-timeline.ex-multi-item .horizontal-nav li.ex_s_lick-current a:before{
+	border: 0;
+    background-color: #00BCD4;
+	bottom:-2.3125em;
+	left:2.1875em;
+}
+.wpex.horizontal-timeline.ex-multi-item .timeline-hr{ border-bottom:0.1875em solid #cccccc}
+.wpex.horizontal-timeline.ex-multi-item .timeline-hr:before {
+    background-image: -webkit-linear-gradient( left , #cccccc, rgba(255, 255, 255, .8));
+    background-image: linear-gradient(to right, #cccccc, rgba(255, 255, 255, .8));
+}
+.wpex.horizontal-timeline.ex-multi-item .timeline-hr:after {
+	position: absolute; content: ""; left: 0; height: 0.1875em; width: 1.25em;
+    background-image: -webkit-linear-gradient( left , rgba(255, 255, 255, .8), #cccccc);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), #cccccc);
+}
+.wpex.wpex-horizontal-2.ex-multi-item .wpex-timeline-label .timeline-details{ padding:0.9375em}
+.wpex-horizontal-2.ex-multi-item .timeline-media + .timeline-details h2{
+	padding:0.625em 0.9375em 0 0.9375em;
+	margin-top:-3.125em; background:#fff;
+}
+.wpex-horizontal-2.ex-multi-item .timeline-media + .timeline-details > div,
+.wpex-horizontal-2.ex-multi-item .timeline-media + .timeline-details .wptl-readmore{ padding-left:0.9375em; padding-right:0.9375em;}
+.wpex-horizontal-3.ex-multi-item .wpex-timeline-label{text-align:center;
+	background:rgba(0,0,0,.6);
+}
+.wpex.wpex-horizontal-3.ex-multi-item .horizontal-nav .wpextt_templates .wptl-readmore a:after{ display:none;}
+.wpex.wpex-horizontal-3.ex-multi-item .horizontal-nav .wpextt_templates .wptl-readmore a{
+	display: inline-block;
+    padding: 0.4375em 0.9375em;
+    border: 0.0625em solid #00BCD4; border-radius:0;
+}
+.wpex.wpex-horizontal-3.ex-multi-item .horizontal-nav .wpextt_templates .wptl-readmore a,
+.wpex.wpex-horizontal-3.ex-multi-item .wpex-timeline-label h2 a{ color:#FFFFFF;}
+.wpex-horizontal-3.ex-multi-item .horizontal-nav li .info-cat *,
+.wpex.wpex-horizontal-3.ex-multi-item .wptl-excerpt{ color:#EEEEEE}
+.wpex.wpex-horizontal-3.ex-multi-item .wpex-timeline-label .timeline-details{ padding:1.5625em 1.875em; border:0;}
+.wpex.wpex-horizontal-3.ex-multi-item .horizontal-nav  h2 a{
+	margin: -1.5625em -1.875em;
+    margin-bottom: 1.875em;
+    padding: 0.625em 1.875em;
+	background: #00BCD4;
+}
+.wpex.wpex-horizontal-3.ex-multi-item .wpex-timeline-label .timeline-details:after{
+	border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #00BCD4;
+    border-width: 0.625em;
+    left: 1.75em;
+    top: -1.125em;
+}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav li a.wpex_point {
+    margin: 0 0.4375em;
+    margin-top: -8.0625em;
+    position: relative;
+    font-size: 1.25em;
+    height: 3.125em;
+}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav li a:before, .wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav li.ex_s_lick-current a:before{ left:50%;}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .wpextt_templates .wptl-readmore a,
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav  .wpextt_templates .timeline-details a,
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .wpex-timeline-label .timeline-details{ text-align:center}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .wpextt_templates .wptl-readmore a{ padding-left:0;
+	border: 0.0625em solid #00BCD4;
+    padding: 0.4375em 0.9375em;
+	display:inline-block; border-radius:0;
+}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav .wptl-readmore a:after{ display:none;}
+.wpex.horizontal-timeline.ex-multi-item.wpex-horizontal-4 .horizontal-nav li a.wpex_point i{
+	position:absolute;
+	left:50%;
+	margin-left:-1.5625em;
+	top:3.125em;
+}
+.wpex.horizontal-timeline.ex-multi-item .ex_s_lick-prev, .wpex.horizontal-timeline.ex-multi-item .ex_s_lick-next{
+	background: rgba(0,0,0,.3);
+    width: 2.8125em;
+    height: 2.8125em;
+    padding: 0;
+    margin: 0; border:0;
+    line-height: 2.25em;
+    border-radius:0em;
+    font-size: 1.375em;
+	opacity: 0;
+    transform: translateX(-1.875em);
+    -webkit-transform: translateX(-1.875em);
+    transition: all .3s ease;
+	color:#FFFFFF;
+}
+.wpex.horizontal-timeline.ex-multi-item .ex_s_lick-next{
+	transform: translateX(1.875em);
+    -webkit-transform: translateX(1.875em);
+}
+.wpex.horizontal-timeline.ex-multi-item:hover .ex_s_lick-prev, .wpex.horizontal-timeline.ex-multi-item:hover .ex_s_lick-next{
+	background:rgba(0,0,0,.6);
+	transform: translateX(0);
+    -webkit-transform: translateX(0);
+    opacity: 1;
+}
+/*----*/
+.wpex.horizontal-timeline.tl-ct-left .timeline-details{ text-align:left;}
+.wpex.horizontal-timeline.tl-ct-left .wptl-readmore a{ border-radius:0;}
+.wpex.horizontal-timeline.tl-ct-left .wpex-timeline-label .timeline-media img{ max-height:100%;}
+.wpex.horizontal-timeline .horizontal-content .ex_s_lick-slide{ padding-left:0.0625em;}
+.wpex.horizontal-timeline .ex_s_lick-list{ box-sizing:content-box; padding-bottom:0.0625em;}
+@media(min-width:64em){
+	.show-all-items .ex_s_lick-track,
+	.tlhl-full .ex_s_lick-track{ transform:none !important}
+}
+/*-- new style mult--*/
+.wpex.horizontal-timeline.tlml-arrow-top .timeline-hr:after,
+.wpex.horizontal-timeline.tlml-arrow-top .timeline-hr:before{
+	height: 0.625em;width: 0.625em; 
+	border-radius:50%; top:0.3125em;top: -0.25em;
+    background-image: none;
+    background-color: #ccc;
+}
+.wpex.horizontal-timeline.tlml-arrow-top .ex_s_lick-prev, .wpex.horizontal-timeline.tlml-arrow-top .ex_s_lick-next{
+	top:3.5em;
+	opacity:1; transform: none; -webkit-transform: none;
+	background:transparent !important;
+    color: #ccc;
+    font-size: 32.4375em;
+}
+/*---- style 5----*/
+.wpex.horizontal-timeline.wpex-horizontal-5 .horizontal-nav li a i:after {
+    content: "";
+    height: 2.5em;
+    display: block;
+    width: 0.125em;
+    background: #ccc;
+    margin-left: 1.375em;
+	margin-top:1.25em;
+}
+.wpex.horizontal-timeline.wpex-horizontal-5 .wpex-timeline-label .timeline-details{ border:0}
+.wpex.horizontal-timeline.wpex-horizontal-5 .wpextt_templates{ margin-top:6.25em;}
+.wpex.horizontal-timeline.wpex-horizontal-5 .horizontal-nav li a.wpex_point i{ border-radius:50%}
+/* loading effect*/
+.wpex.ld-screen {
+    max-height: 31.25em;
+    overflow: hidden;
+}
+.wpex.ld-screen.at-childdiv{ max-height:inherit; overflow:visible;}
+.wpex.ld-screen.at-childdiv > .wpextl-loadcont{ opacity:0; transition:all .3s; z-index:-999}
+.wpex.ld-screen > *:not(.wpextl-loadcont){ opacity:0; transition:all .3s;}
+.wpex.ld-screen.at-childdiv > *:not(.wpextl-loadcont){ opacity:1;}
+.wpextl-loadcont{
+	position: absolute;
+    top:0em;
+    left:0em;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	opacity:0;
+	transition:all ease-out 7s;
+}
+.ld-screen > .wpextl-loadcont{ opacity:1; z-index:99999}
+.wpextl-loadicon,
+.wpextl-loadicon::before,
+.wpextl-loadicon::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 0.0625em solid rgb(204,204,204);
+	border-left-color: rgb(0,189,151);
+	border-radius: 60.875em;
+		-o-border-radius: 60.875em;
+		-ms-border-radius: 60.875em;
+		-webkit-border-radius: 60.875em;
+		-moz-border-radius: 60.875em;
+}
+.wpextl-loadicon {
+	margin: -1.5em 0 0 -1.5em;
+	height: 3.0625em;
+	width: 3.0625em;
+	animation: wptl_load-rotate 1150ms linear infinite;
+		-o-animation: wptl_load-rotate 1150ms linear infinite;
+		-ms-animation: wptl_load-rotate 1150ms linear infinite;
+		-webkit-animation: wptl_load-rotate 1150ms linear infinite;
+		-moz-animation: wptl_load-rotate 1150ms linear infinite;
+}
+.wpextl-loadicon::before {
+	content: "";
+	margin: -1.375em 0 0 -1.375em;
+	height: 2.6875em;
+	width: 2.6875em;
+	animation: wptl_load-rotate 1150ms linear infinite;
+		-o-animation: wptl_load-rotate 1150ms linear infinite;
+		-ms-animation: wptl_load-rotate 1150ms linear infinite;
+		-webkit-animation: wptl_load-rotate 1150ms linear infinite;
+		-moz-animation: wptl_load-rotate 1150ms linear infinite;
+}
+.wpextl-loadicon::after {
+	content: "";
+	margin: -1.75em 0 0 -1.75em;
+	height: 3.4375em;
+	width: 3.4375em;
+	animation: wptl_load-rotate 2300ms linear infinite;
+		-o-animation: wptl_load-rotate 2300ms linear infinite;
+		-ms-animation: wptl_load-rotate 2300ms linear infinite;
+		-webkit-animation: wptl_load-rotate 2300ms linear infinite;
+		-moz-animation: wptl_load-rotate 2300ms linear infinite;
+}
+@keyframes wptl_load-rotate {
+	100% {transform: rotate(360deg);}
+}
+
+@-o-keyframes wptl_load-rotate {
+	100% {-o-transform: rotate(360deg);}
+}
+
+@-ms-keyframes wptl_load-rotate {
+	100% {-ms-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes wptl_load-rotate {
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes wptl_load-rotate {
+	100% {-moz-transform: rotate(360deg);}
+}

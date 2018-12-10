@@ -1,0 +1,1 @@
+ÅEwp-content/plugins/sitepress-multilingual-cms/lib/select2/select2.css 2cssXÁhrEwp-content/plugins/sitepress-multilingual-cms/lib/select2/select2.css

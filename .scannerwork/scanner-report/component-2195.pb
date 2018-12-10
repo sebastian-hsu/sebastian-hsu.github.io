@@ -1,0 +1,1 @@
+“@wp-content/themes/photography/functions/colorpicker/js/layout.js 2jsXChr@wp-content/themes/photography/functions/colorpicker/js/layout.js

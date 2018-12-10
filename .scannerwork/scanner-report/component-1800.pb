@@ -1,0 +1,1 @@
+ˆ5wp-content/plugins/simply-static/js/admin-settings.js 2jsXkhr5wp-content/plugins/simply-static/js/admin-settings.js

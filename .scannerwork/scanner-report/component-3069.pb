@@ -1,0 +1,1 @@
+ýLwp-content/themes/photography/modules/kirki/controls/js/src/color-palette.js 2jsXhrLwp-content/themes/photography/modules/kirki/controls/js/src/color-palette.js

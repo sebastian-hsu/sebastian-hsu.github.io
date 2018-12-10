@@ -1,0 +1,1 @@
+Ø=wp-content/plugins/sitepress-multilingual-cms/res/css/tooltip :×r=wp-content/plugins/sitepress-multilingual-cms/res/css/tooltip

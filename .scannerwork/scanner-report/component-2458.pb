@@ -1,0 +1,1 @@
+š=wp-content/themes/photography/js/custom_testimonial_slider.js 2jsXhr=wp-content/themes/photography/js/custom_testimonial_slider.js

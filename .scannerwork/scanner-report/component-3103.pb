@@ -1,0 +1,1 @@
+ŸDwp-content/themes/photography/modules/kirki/controls/scss/color.scss 2cssXhrDwp-content/themes/photography/modules/kirki/controls/scss/color.scss

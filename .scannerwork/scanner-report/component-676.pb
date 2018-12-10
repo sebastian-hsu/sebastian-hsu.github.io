@@ -1,0 +1,1 @@
+¤fwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/copy-all-popup-view.js 2jsXihrfwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/copy-all-popup-view.js

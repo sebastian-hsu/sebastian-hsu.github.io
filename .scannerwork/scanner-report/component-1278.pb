@@ -1,0 +1,1 @@
+þ	Mwp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/phpcs.xml 2xmlXhrMwp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/phpcs.xml

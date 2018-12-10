@@ -1,0 +1,1 @@
+ƒ.wp-content/plugins/jc-recaptcha/js/jcscript.js 2jsXhr.wp-content/plugins/jc-recaptcha/js/jcscript.js

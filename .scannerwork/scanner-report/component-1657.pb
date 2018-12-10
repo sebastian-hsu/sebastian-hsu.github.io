@@ -1,0 +1,1 @@
+ùGwp-content/plugins/admin-menu-editor/modules/highlight-new-menus/assets :øúürGwp-content/plugins/admin-menu-editor/modules/highlight-new-menus/assets

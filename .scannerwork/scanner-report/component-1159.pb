@@ -1,0 +1,1 @@
+‡	^wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.css 2cssXhr^wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.css

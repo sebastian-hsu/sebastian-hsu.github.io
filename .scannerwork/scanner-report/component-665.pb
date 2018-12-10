@@ -1,0 +1,1 @@
+ôOwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views :òöõúùûü†°¢£§•rOwp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views

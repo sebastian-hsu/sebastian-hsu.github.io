@@ -1,0 +1,1 @@
+åVwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/tabs.html 2webXhrVwp-content/plugins/sitepress-multilingual-cms/templates/taxonomy-translation/tabs.html

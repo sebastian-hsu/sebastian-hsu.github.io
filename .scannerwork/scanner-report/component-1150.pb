@@ -1,0 +1,1 @@
+þZwp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown :ýrZwp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown

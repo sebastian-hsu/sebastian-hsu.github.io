@@ -1,0 +1,1 @@
+ûSwp-content/plugins/sitepress-multilingual-cms/res/js/translation-synchronization.js 2jsXhrSwp-content/plugins/sitepress-multilingual-cms/res/js/translation-synchronization.js

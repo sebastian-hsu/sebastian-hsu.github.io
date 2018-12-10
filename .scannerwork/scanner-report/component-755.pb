@@ -1,0 +1,1 @@
+óEwp-content/plugins/sitepress-multilingual-cms/res/xsd/wpml-config.xsd 2xmlXÙhrEwp-content/plugins/sitepress-multilingual-cms/res/xsd/wpml-config.xsd
