@@ -271,10 +271,10 @@ line-height: 1.6em!important;
 }
 
 @media (max-width: 75em) {
-	 .mobile_menu_wrapper #header_searchform{
+	 .mobile_menu_wrapper #header_searchform, .mobile_menu_wrapper #header_searchform2{
 		display:block;
 	}
-	 .mobile_menu_wrapper #header_searchform input{
+	 .mobile_menu_wrapper #header_searchform input, .mobile_menu_wrapper #header_searchform2 input{
 	border:1px solid #000;
 		padding-left:1em;
 		    width: 100%;
@@ -283,7 +283,7 @@ line-height: 1.6em!important;
 		
 }
 	
- .mobile_menu_wrapper #header_searchform button{
+ .mobile_menu_wrapper #header_searchform button, .mobile_menu_wrapper #header_searchform2 button{
 		color:#000!important;
 	}
 }
@@ -656,7 +656,7 @@ body.home  .bot-section {
 		    		<ul class="language_link">
 						  <li><a href="/" class="active_1">中</a></li><li><span>|</span></li><li><a href="/en/" class="active_0">En</a></li>							
 					</ul>
-										<form method="get" name="searchform" id="header_searchform" action="/">
+										<form method="get" name="searchform" id="header_searchform2" action="/">
 											<div>
 							<input type="text" value="" name="s" id="s" autocomplete="off" >
 							<button>
