@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 
-body#index-page {
+body#index-page, .body#index-page {
   font-family: serif;
   height: 100%;
   overflow: hidden;
@@ -469,7 +469,9 @@ body#index-page {
 }
 
 body#index-page .top-section .nav .arrow-tip-top,
-body#index-page .top-section .nav .arrow-tip-bot {
+body#index-page .top-section .nav .arrow-tip-bot,
+.body#index-page .top-section .nav .arrow-tip-top,
+.body#index-page .top-section .nav .arrow-tip-bot {
   position: absolute;
       top: 1.87em !important;
   width: 1.25em;

@@ -1,4 +1,4 @@
-body#index-page {
+body#index-page, .body#index-page {
   font-family: serif;
   height: 100%;
   overflow: hidden;

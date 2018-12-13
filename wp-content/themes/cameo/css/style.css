@@ -1056,7 +1056,7 @@ h4 {
     background: #262118;
   }
 
-  body#index-page{
+  body#index-page, .body#index-page{
      background: #262118!important;
   }
 
