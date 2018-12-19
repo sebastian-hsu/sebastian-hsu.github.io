@@ -3594,6 +3594,7 @@
 				case 'image':
 					media.dom = utils.createEl( 'img', this.pre + '-img' );
 					media.dom.src = media.src;
+                    media.dom.alt = media.src;
 					break;
 
 				case 'video':
