@@ -991,6 +991,19 @@ Tel: +886-2-27822120~9(共10線) (10 lines) | Fax. +886-2-2785-3847 | Email. <a 
 <script type='text/javascript' src='/wp-content/themes/photography/js/custom_plugins.js'></script>
 <script type='text/javascript' src='/wp-content/themes/photography/js/custom.js'></script>
 <script type='text/javascript' src='/wp-admin/admin-ajax.php?action=photography_script_gallery_grid&#038;id=portfolio_filter_wrapper'></script>
+<script>
+var divHeight = 0;
+var x = document.getElementsByClassName("element grid classic3_cols opacity");
+for (var i=0; i<x.length; i++) {
+if (x[i].clientHeight > divHeight) {
+divHeight = x[i].clientHeight;
+}
+}
+for (var i=0; i<x.length; i++) {
+x[i].setAttribute("style","height:" + divHeight + "px");
+}
+</script>
+
 </body>
 </html>
 <!-- End content -->
