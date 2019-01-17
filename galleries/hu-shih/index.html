@@ -165,9 +165,9 @@ height: auto;
 position: relative;
 bottom: 5em;
 }
-.three_cols.gallery .element{
+/* .three_cols.gallery .element{
 	margin-right: 0.875em;
-}
+} */
 .postid-7113 #page_content_wrapper .inner .sidebar_content img, .page_content_wrapper .inner .sidebar_content img {
 max-width: 100%;
 height: auto;
@@ -198,7 +198,7 @@ letter-spacing: 0!important;
 
 @media (max-width: 47.9375em) {
 	.three_cols.gallery .element{
-			width: 100%
+			width: 100%!important;
 	}
 .galleries-template-default .one_third.gallery3.static  {
    overflow: hidden;
@@ -304,12 +304,12 @@ line-height: 1.6em!important;
     margin-left: 0.8em;
 } */
 
-.page-id-6217 .three_cols.gallery:not(.mixed_grid) .element.masonry, .three_cols.gallery:not(.mixed_grid) .element:nth-child(3n){
+/* .page-id-6217 .three_cols.gallery:not(.mixed_grid) .element.masonry, .three_cols.gallery:not(.mixed_grid) .element:nth-child(3n){
 	    margin-right: 20px;
-}
-.page-id-6287 .three_cols.gallery:not(.mixed_grid) .element.masonry, .three_cols.gallery:not(.mixed_grid) .element:nth-child(3n){
+} */
+/* .page-id-6287 .three_cols.gallery:not(.mixed_grid) .element.masonry, .three_cols.gallery:not(.mixed_grid) .element:nth-child(3n){
 	    margin-right: 20px;
-}
+} */
 
 .nav_wrapper_inner a{
 	letter-spacing:0px;
@@ -446,7 +446,10 @@ div#custom_post_widget-5911 p {
 		width:100%;
 	}
 }
-
+.page-id-6247 #page_content_wrapper,.page-id-6281 #page_content_wrapper{
+	    max-width: 100.0625em;
+	
+}
 body#index-page .bot-section .tab-panel.active{
 	z-index:999999!important;
 	position:absolute;
@@ -786,7 +789,7 @@ body.home  .bot-section {
 		
 					
 			    <a data-rel="photography_gallery_6483" data-title="學人宿舍(今蔡元培館)舉行落成典禮時，胡適(左一)與李濟(左三)及亞洲基金會會長Dr. Robert Blum夫婦（左二、右三）等貴賓合照。" data-desc="" data-thumb="/wp-content/uploads/2018/07/03-01-03.jpg" href="/wp-content/uploads/2018/07/03-01-03.jpg"  class="fancy-gallery">
-			        <img src="/wp-content/uploads/2018/07/03-01-03.jpg" alt="03-01-03" class="preview" />
+			        <img src="/wp-content/uploads/2018/07/03-01-03.jpg" alt="" class="preview" />
 			    </a>
 					
 		</div>
@@ -1147,19 +1150,6 @@ Tel: +886-2-27822120~9(共10線) (10 lines) | Fax. +886-2-2785-3847 | Email. <a 
 <script type='text/javascript' src='/wp-content/themes/photography/js/custom_plugins.js'></script>
 <script type='text/javascript' src='/wp-content/themes/photography/js/custom.js'></script>
 <script type='text/javascript' src='/wp-admin/admin-ajax.php?action=photography_script_gallery_grid&#038;id=portfolio_filter_wrapper'></script>
-<script>
-var divHeight = 0;
-var x = document.getElementsByClassName("element grid classic3_cols opacity");
-for (var i=0; i<x.length; i++) {
-if (x[i].clientHeight > divHeight) {
-divHeight = x[i].clientHeight;
-}
-}
-for (var i=0; i<x.length; i++) {
-x[i].setAttribute("style","height:" + divHeight + "px");
-}
-</script>
-
 </body>
 </html>
 <!-- End content -->

@@ -1136,3 +1136,7 @@ h4 {
 
     width: 2em;
    }
+
+#header_searchform {
+display:none;
+}
